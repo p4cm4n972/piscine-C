@@ -1,0 +1,1 @@
+void ft_selection_sort(int *tab,int size){int i,j,min,temp;for(i=0;i<size-1;i++){min=i;for(j=i+1;j<size;j++){if(tab[j]<tab[min])min=j;}temp=tab[i];tab[i]=tab[min];tab[min]=temp;}}

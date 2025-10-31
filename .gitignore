@@ -1,0 +1,56 @@
+# Fichiers compilés
+*.o
+*.a
+*.out
+*.exe
+a.out
+
+# Fichiers exécutables générés
+**/ft_*
+!**/ft_*.c
+!**/ft_*.h
+**/challenge_*
+!**/challenge_*.c
+**/test_*
+!**/test_*.c
+
+# Fichiers de debugging
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Valgrind
+vgcore.*
+*.log
+
+# GProf
+gmon.out
+analysis.txt
+
+# Makefiles objets
+*.d
+
+# VS Code
+.vscode/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+
+# Temporary files
+*.tmp
+*.bak
+
+# Core dumps
+core
+core.*
+
+# Binary folders
+bin/
+build/
+obj/
+
+# Exceptions : garder les executables avec extension

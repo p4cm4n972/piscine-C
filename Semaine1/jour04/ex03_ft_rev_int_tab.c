@@ -1,0 +1,1 @@
+void ft_rev_int_tab(int *tab,int size){int i=0,tmp;while(i<size/2){tmp=tab[i];tab[i]=tab[size-1-i];tab[size-1-i]=tmp;i++;}}

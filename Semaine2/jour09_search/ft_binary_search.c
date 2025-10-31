@@ -1,0 +1,1 @@
+int ft_binary_search(int *tab,int size,int target){int l=0,r=size-1,m;while(l<=r){m=(l+r)/2;if(tab[m]==target)return m;if(tab[m]<target)l=m+1;else r=m-1;}return -1;}

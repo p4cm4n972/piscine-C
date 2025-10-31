@@ -1,0 +1,1 @@
+int ft_find_int(int *tab,int size,int n){for(int i=0;i<size;i++)if(tab[i]==n)return i;return -1;}

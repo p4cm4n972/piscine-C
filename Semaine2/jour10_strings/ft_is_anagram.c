@@ -1,0 +1,2 @@
+#include <string.h>
+int ft_is_anagram(char *s1,char *s2){int c[256]={0};if(strlen(s1)!=strlen(s2))return 0;for(int i=0;s1[i];i++){c[(unsigned char)s1[i]]++;c[(unsigned char)s2[i]]--;}for(int i=0;i<256;i++)if(c[i]!=0)return 0;return 1;}

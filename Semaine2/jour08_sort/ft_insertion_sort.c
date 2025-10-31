@@ -1,0 +1,1 @@
+void ft_insertion_sort(int *tab,int size){int i,j,key;for(i=1;i<size;i++){key=tab[i];j=i-1;while(j>=0&&tab[j]>key){tab[j+1]=tab[j];j--;}tab[j+1]=key;}}
