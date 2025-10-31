@@ -1,6 +1,6 @@
-# 🏊 Piscine Algorithmie C – Façon EPITA  
-_Auteur : Manuel ADELE_  
-_Distribution : Manjaro Linux / GCC_  
+# 🏊 Piscine Algorithmie C
+_Auteur : Manuel ADELE_
+_Distribution : Manjaro Linux / GCC_
 _Durée : 4 semaines_
 
 ---
@@ -167,11 +167,11 @@ valgrind ./test
 À la fin de cette Piscine :
 - Tu seras capable d’écrire du code **C propre, robuste et portable**.  
 - Tu comprendras les **mécanismes internes** que tout langage haut niveau cache.  
-- Tu auras la **rigueur EPITA**, utile dans tout projet (Angular, NestJS, ou DevOps).
+- Tu auras la **rigueur **, utile dans tout projet (Angular, NestJS, ou DevOps).
 
 ---
 
-## 📜 Citation EPITA
+## 📜 Citation 
 > “Un bon ingénieur n’écrit pas du code,  
 > il écrit une solution que la machine peut comprendre.”
 

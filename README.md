@@ -1,17 +1,17 @@
-# 🏊 Piscine C EPITA - Formation Intensive 4 Semaines
+# 🏊 Piscine C - Formation Intensive 4 Semaines
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)](https://en.wikipedia.org/wiki/C_(programming_language))
-[![Progress](https://img.shields.io/badge/Progress-75%25-brightgreen)](https://github.com/yourusername/piscine-c-epita)
+[![Progress](https://img.shields.io/badge/Progress-75%25-brightgreen)](https://github.com/p4cm4n972/piscine-C)
 
-> Programme complet d'entraînement intensif en programmation C de niveau EPITA
+> Programme complet d'entraînement intensif en programmation C
 > **~100 fichiers | ~9000 lignes de code | 70+ exercices**
 
 ---
 
 ## 📖 À propos
 
-Ce repository contient l'intégralité d'une **Piscine C** (bootcamp intensif) inspirée du cursus EPITA. Il couvre 4 semaines de formation progressive, du niveau débutant au niveau avancé, avec des exercices pratiques, des projets complets et une documentation exhaustive.
+Ce repository contient l'intégralité d'une **Piscine C** (bootcamp intensif) couvrant 4 semaines de formation progressive, du niveau débutant au niveau avancé, avec des exercices pratiques, des projets complets et une documentation exhaustive.
 
 **Auteur :** Manuel ADELE
 **Durée :** 4 semaines (~120 heures)
@@ -133,8 +133,8 @@ sudo apt install build-essential valgrind gdb git vim
 
 ```bash
 # Cloner le repository
-git clone https://github.com/yourusername/piscine-c-epita.git
-cd piscine-c-epita
+git clone https://github.com/p4cm4n972/piscine-C.git
+cd piscine-C
 
 # Compiler un exercice
 cd Semaine1/jour01
@@ -149,7 +149,7 @@ valgrind --leak-check=full ./test
 
 ## 📚 Documentation
 
-- **[README_PiscineC_EPITA.md](README_PiscineC_EPITA.md)** - Guide principal complet
+- **[README_PiscineC.md](README_PiscineC.md)** - Guide principal complet
 - **[RESUME_COMPLET_PISCINE.md](RESUME_COMPLET_PISCINE.md)** - Résumé des 4 semaines
 - **[Semaine3/GUIDE_COMPLET_S3.md](Semaine3/GUIDE_COMPLET_S3.md)** - Guide Semaine 3
 - **[Semaine3/jour17_minishell/README.md](Semaine3/jour17_minishell/README.md)** - Documentation mini-shell
@@ -274,9 +274,9 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 
 ## 🙏 Remerciements
 
-- **EPITA** pour l'inspiration du programme
 - **Claude Code** pour l'assistance au développement
 - La communauté **42** pour les standards de code
+- La communauté open-source pour l'inspiration
 
 ---
 
@@ -297,4 +297,3 @@ N'hésite pas à ⭐ star le repository et à le partager !
 ---
 
 > *"Un bon programmeur n'écrit pas du code, il résout des problèmes."*
-> — Philosophie EPITA

@@ -192,7 +192,7 @@ Tous les challenges ajoutés contiennent :
 ## ✅ Qualité et conformité
 
 Tous les fichiers respectent :
-- ✅ Normes EPITA (style de code)
+- ✅ Normes  (style de code)
 - ✅ Compilation avec `-Wall -Wextra -Werror`
 - ✅ Commentaires explicatifs
 - ✅ TODO clairs pour l'apprentissage
@@ -214,4 +214,4 @@ Pour compléter la Semaine 2 :
 
 **La Semaine 2 est maintenant complète et prête à être utilisée ! 🎉**
 
-Tous les exercices sont au niveau EPITA et couvrent les concepts algorithmiques fondamentaux nécessaires pour progresser en C.
+Tous les exercices sont au niveau  et couvrent les concepts algorithmiques fondamentaux nécessaires pour progresser en C.

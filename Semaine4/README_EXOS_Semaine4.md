@@ -1,4 +1,4 @@
-# 📚 SEMAINE 4 : Projets avancés & Optimisation — Piscine C EPITA
+# 📚 SEMAINE 4 : Projets avancés & Optimisation — Piscine C 
 
 ## 🎯 Objectifs de la semaine
 Mettre en pratique toutes les compétences acquises dans des projets complets de niveau professionnel.
@@ -228,9 +228,9 @@ Projet au choix parmi plusieurs options avancées.
 
 ---
 
-## 🎓 Niveau EPITA
+## 🎓 Niveau 
 
-Cette semaine 4 correspond au niveau **avancé/expert EPITA** :
+Cette semaine 4 correspond au niveau **avancé/expert ** :
 
 | Notion | Niveau attendu |
 |--------|----------------|
@@ -287,14 +287,14 @@ perf stat ./programme
 - ✅ Maîtrise complète du C
 - ✅ Compréhension profonde de la mémoire
 - ✅ Capacité à créer des projets complexes
-- ✅ Rigueur d'ingénieur EPITA
+- ✅ Rigueur d'ingénieur 
 - ✅ Portfolio de projets en C
 
 ---
 
 ## 🏆 Critères de validation finale
 
-Tu as réussi la Piscine C EPITA si :
+Tu as réussi la Piscine C si :
 - ✅ Tous les projets compilent sans erreur ni warning
 - ✅ Aucune fuite mémoire (valgrind clean)
 - ✅ Tu peux expliquer chaque ligne de code

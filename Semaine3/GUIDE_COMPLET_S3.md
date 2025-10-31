@@ -391,4 +391,4 @@ Tu as maintenant :
 
 **Dernière mise à jour** : 27 Octobre 2025
 **Auteur** : Claude Code
-**Niveau** : Piscine C EPITA
+**Niveau** : Piscine C 

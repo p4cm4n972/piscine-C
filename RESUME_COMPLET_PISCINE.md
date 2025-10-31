@@ -1,8 +1,8 @@
-# 🏊 RÉSUMÉ COMPLET - PISCINE C EPITA (4 SEMAINES)
+# 🏊 RÉSUMÉ COMPLET - PISCINE C (4 SEMAINES)
 
 ## 📋 Vue d'ensemble
 
-Cette Piscine C niveau EPITA est un parcours intensif de **4 semaines** conçu pour maîtriser la programmation C, l'algorithmique et la gestion mémoire du niveau débutant au niveau expert.
+Cette Piscine C est un parcours intensif de **4 semaines** conçu pour maîtriser la programmation C, l'algorithmique et la gestion mémoire du niveau débutant au niveau expert.
 
 ---
 
@@ -10,7 +10,7 @@ Cette Piscine C niveau EPITA est un parcours intensif de **4 semaines** conçu p
 
 ```
 PiscineC/
-├── README_PiscineC_EPITA.md     (Guide principal)
+├── README_PiscineC.md     (Guide principal)
 ├── RESUME_COMPLET_PISCINE.md    (Ce fichier)
 │
 ├── Semaine1/                     (Syntaxe & Bases du C)
@@ -332,7 +332,7 @@ man 3 getline
 
 ## ✅ Critères de validation finale
 
-Tu auras réussi la Piscine C EPITA si :
+Tu auras réussi la Piscine C si :
 
 ### Technique
 - [ ] Tous les exercices compilent sans erreur ni warning
@@ -379,7 +379,7 @@ Tu auras réussi la Piscine C EPITA si :
 ## 💬 Citations inspirantes
 
 > "Un bon ingénieur n'écrit pas du code, il écrit une solution que la machine peut comprendre."
-> — Philosophie EPITA
+> — Philosophie 
 
 > "C is quirky, flawed, and an enormous success."
 > — Dennis Ritchie (créateur du C)
@@ -404,7 +404,7 @@ Pour toute question sur les exercices :
 **Date : Octobre 2025**
 **Dernière mise à jour : 31 Octobre 2025**
 **Version : 2.0 - Semaine 3 complète**
-**Niveau : EPITA Piscine C**
+**Niveau : Piscine C**
 
 **Progression actuelle : 75% de la Piscine complète !**
 

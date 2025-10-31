@@ -1,4 +1,4 @@
-# 📚 SEMAINE 2 : Algorithmique avancée — Piscine C EPITA
+# 📚 SEMAINE 2 : Algorithmique avancée — Piscine C 
 
 ## 🎯 Objectifs de la semaine
 Maîtriser les concepts algorithmiques fondamentaux et les techniques de programmation avancées en C.
@@ -229,9 +229,9 @@ Un **jeu de devinettes avancé** qui combine :
 
 ---
 
-## 🎓 Niveau EPITA
+## 🎓 Niveau 
 
-Cette semaine 2 correspond au niveau attendu en **fin de piscine EPITA** :
+Cette semaine 2 correspond au niveau attendu en **fin de piscine ** :
 
 | Notion | Niveau attendu |
 |--------|----------------|

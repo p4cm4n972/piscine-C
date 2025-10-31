@@ -1,4 +1,4 @@
-# 📚 SEMAINE 3 : Mémoire & Pointeurs avancés — Piscine C EPITA
+# 📚 SEMAINE 3 : Mémoire & Pointeurs avancés — Piscine C 
 
 ## 🎯 Objectifs de la semaine
 Maîtriser la gestion mémoire et les structures de données dynamiques en C.
@@ -235,9 +235,9 @@ Projet final : créer un allocateur mémoire simple ou un système de gestion de
 
 ---
 
-## 🎓 Niveau EPITA
+## 🎓 Niveau 
 
-Cette semaine 3 correspond au niveau **intermédiaire-avancé EPITA** :
+Cette semaine 3 correspond au niveau **intermédiaire-avancé ** :
 
 | Notion | Niveau attendu |
 |--------|----------------|

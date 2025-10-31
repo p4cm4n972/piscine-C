@@ -1,4 +1,4 @@
-# 🧩 SEMAINE 1 – ÉNONCÉS DES EXERCICES (façon EPITA)
+# 🧩 SEMAINE 1 – ÉNONCÉS DES EXERCICES (façon )
 
 ---
 
