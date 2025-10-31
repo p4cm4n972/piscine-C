@@ -1,4 +1,25 @@
-# 🧩 SEMAINE 1 – ÉNONCÉS DES EXERCICES (façon )
+# 🧩 SEMAINE 1 – SYNTAXE & BASES DU C
+
+## 📋 Vue d'ensemble
+
+**Durée :** 18-26 heures
+**Niveau :** Débutant
+**Objectif :** Maîtriser la syntaxe C, les pointeurs basiques et les outils de développement
+
+### 📊 Progression
+
+| Jour | Thème | Exercices | Status |
+|------|-------|-----------|--------|
+| Jour 1 | Premiers pas | 6 fichiers | ✅ 100% |
+| Jour 2 | Chaînes | 5 fichiers | ✅ 100% |
+| Jour 3 | Fonctions | 5 fichiers | ✅ 100% |
+| Jour 4 | Tableaux | 4 fichiers | ✅ 100% |
+| Jour 5 | Makefile/Git | 2 fichiers | ✅ 100% |
+| Jour 6 | Libft | 5 fichiers | ✅ 100% |
+
+**Total :** 27 exercices ✅ 100% complété
+
+---
 
 ---
 
@@ -150,6 +171,70 @@ Recode une version simplifiée de `printf` (supportant `%c`, `%s`, `%d`).
 ---
 
 ## 🧠 Bonus chaque soir
-- Implémente une fonction que tu as déjà vue **sans regarder ton ancien code**.  
-- Note dans un carnet les erreurs récurrentes.  
-- Chrono : ≤ 45 min / exo max.  
+- Implémente une fonction que tu as déjà vue **sans regarder ton ancien code**.
+- Note dans un carnet les erreurs récurrentes.
+- Chrono : ≤ 45 min / exo max.
+
+---
+
+## 🛠️ Compilation et Tests
+
+### Compiler un exercice
+
+```bash
+cd Semaine1/jour01
+gcc -Wall -Wextra -Werror ex01_ft_putchar.c -o test
+./test
+```
+
+### Compiler la libft
+
+```bash
+cd Semaine1/jour06_libft
+make
+./test_libft
+make clean
+```
+
+### Flags obligatoires
+
+```bash
+gcc -Wall -Wextra -Werror -std=c99 fichier.c -o programme
+```
+
+---
+
+## 📚 Documentation complète
+
+- **[SEMAINE1_COMPLETE.md](SEMAINE1_COMPLETE.md)** - Statut détaillé de tous les fichiers
+- **[GUIDE_COMPLET_S1.md](GUIDE_COMPLET_S1.md)** - Guide final avec templates
+- **[jour05/ex02_git_guide.md](jour05/ex02_git_guide.md)** - Guide Git
+- **[jour06/README.md](jour06/README.md)** - Documentation Libft
+
+---
+
+## 🎯 Objectifs de la Semaine 1
+
+À la fin de cette semaine, tu dois maîtriser :
+
+- ✅ Syntaxe C complète (variables, types, opérateurs)
+- ✅ Boucles (for, while) et conditions (if/else)
+- ✅ Fonctions et prototypes
+- ✅ Pointeurs basiques (* et &)
+- ✅ Tableaux et manipulation
+- ✅ Chaînes de caractères (char *)
+- ✅ Makefile et compilation
+- ✅ Git et versioning
+
+---
+
+## 📈 Progression
+
+**Semaine 1 : ████████████ 100% complété**
+
+Prêt pour la **Semaine 2 : Algorithmique** ! 🚀
+
+---
+
+**Dernière mise à jour :** 31 Octobre 2025
+**Niveau :** Piscine C - Semaine 1
