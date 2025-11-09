@@ -20,14 +20,20 @@
 
 int	ft_max(int *tab, int size)
 {
-	// TODO: À toi de coder !
-	// Astuce :
-	// 1. Vérifie que size > 0
-	// 2. Initialise max avec la première valeur du tableau
-	// 3. Parcours le reste du tableau
-	// 4. Met à jour max si tu trouves une valeur plus grande
+	int	max;
+	int	i;
 
-	return (0);
+	if (size <= 0)
+		return (0);
+	max = tab[0];
+	i = 1;
+	while (i < size)
+	{
+		if (tab[i] > max)
+			max = tab[i];
+		i++;
+	}
+	return (max);
 }
 
 int	main(void)
@@ -52,8 +58,25 @@ int	main(void)
 }
 
 /*
-** BONUS :
-** - Chronomètre : < 10 min
-** - Complexité : O(n)
-** - Variante : ft_min (trouve le minimum)
+** 🔗 JS :
+** // Built-in
+** Math.max(...arr);
+** Math.max.apply(null, arr);
+**
+** // Reduce
+** const max = arr.reduce((max, val) => Math.max(max, val), arr[0]);
+**
+** // Manual
+** function findMax(arr) {
+**     if (!arr.length) return null;
+**     let max = arr[0];
+**     for (let i = 1; i < arr.length; i++) {
+**         if (arr[i] > max) max = arr[i];
+**     }
+**     return max;
+** }
+**
+** Interview : Edge cases (empty array, all negatives)
+** Variante : Min, MinMax (return both), Kth largest
+** LeetCode #215 - Kth Largest Element
 */

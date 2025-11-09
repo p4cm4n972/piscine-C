@@ -41,13 +41,11 @@ int	ft_is_prime(int nb)
 
 int	ft_find_next_prime(int nb)
 {
-	// TODO: À toi de coder !
-	// Astuce :
-	// 1. Si nb < 2, retourne 2
-	// 2. Sinon, parcours les nombres à partir de nb
-	// 3. Retourne le premier nombre pour lequel ft_is_prime retourne 1
-
-	return (0);
+	if (nb < 2)
+		return (2);
+	while (!ft_is_prime(nb))
+		nb++;
+	return (nb);
 }
 
 int	main(void)
@@ -65,8 +63,14 @@ int	main(void)
 }
 
 /*
-** BONUS :
-** - Chronomètre : < 15 min
-** - Teste avec de grands nombres (10000, 100000)
-** - Optimisation : commence la recherche à nb (pas à 2)
+** 🔗 JS :
+** function findNextPrime(n) {
+**     if (n < 2) return 2;
+**     while (!isPrime(n)) n++;
+**     return n;
+** }
+**
+** Interview : Prime number generation, caching
+** LeetCode #204 - Count Primes (Sieve of Eratosthenes)
+** Optimization : Skip even numbers after 2
 */
