@@ -1,7 +1,6 @@
-# 📋 Dossier de Compétences - Piscine C
+# 🚀 Piscine C
 
-> **Formation intensive en programmation système et algorithmique**
-> **Manuel ADELE** | Développeur Full-Stack JavaScript (6 ans) | Montée en compétences C/C++
+> **Formation intensive en programmation système et algorithmique C**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)](https://en.wikipedia.org/wiki/C_(programming_language))
@@ -9,236 +8,259 @@
 
 ---
 
-## 👤 Profil du Candidat
+## 📖 À propos du projet
 
-**Nom :** Manuel ADELE
-**Email :** manuel.adele@gmail.com
-**GitHub :** [@P4cm4n972](https://github.com/P4cm4n972)
-**LinkedIn :** [Manuel ADELE](https://linkedin.com/in/manuel-adele)
+Ce repository contient une formation intensive et auto-dirigée en programmation C, axée sur :
+- **Algorithmique** : tri, recherche, récursion, optimisation
+- **Structures de données** : tableaux, listes chaînées, hash tables, arbres
+- **Gestion mémoire** : malloc/free, pointeurs, valgrind
+- **Programmation système** : fork, exec, pipes, signals
 
-**Expérience :** 6 ans en développement Full-Stack (JavaScript, React, Node.js)
-**Objectif :** Renforcement des compétences en algorithmique et programmation bas-niveau pour intervenir sur des projets embarqués, système ou performance-critical
+**Objectif** : Maîtriser les fondamentaux de la programmation bas-niveau et renforcer les compétences en algorithmique.
 
-**Formation complémentaire :** Piscine C intensive (4 semaines, 120h)
-**Période :** Octobre - Novembre 2024
-**Statut :** 85% complété | ~9000 lignes de code | 70+ exercices
-
----
-
-## 🎯 Synthèse des Compétences Acquises
-
-### Compétences Techniques Principales
-
-| Domaine | Compétences | Niveau | Justificatifs |
-|---------|-------------|--------|---------------|
-| **Algorithmique** | Tri, recherche, récursion, complexité O(n) | ⭐⭐⭐⭐ Confirmé | 35 exercices, 12 algorithmes implémentés |
-| **Structures de données** | Tableaux, listes chaînées, hash tables, arbres | ⭐⭐⭐⭐ Confirmé | 18 implémentations complètes |
-| **Gestion mémoire** | malloc/free, valgrind, détection de fuites | ⭐⭐⭐⭐ Confirmé | 0 leaks sur 45+ programmes |
-| **Programmation système** | fork, exec, pipes, signals | ⭐⭐⭐ Intermédiaire | Mini-shell fonctionnel |
-| **Debugging** | GDB, Valgrind, profiling | ⭐⭐⭐ Intermédiaire | 70+ programmes debuggés |
-| **Build & Tooling** | Makefile, Git, compilation | ⭐⭐⭐⭐ Confirmé | 8 Makefiles, 15+ commits structurés |
-
-### Compétences Transférables (JS → C)
-
-- ✅ **Patterns algorithmiques** : Two Pointers, Sliding Window, Binary Search, DFS/BFS
-- ✅ **Optimisation** : De O(n²) à O(n log n), compréhension cache CPU
-- ✅ **Architecture logicielle** : Modules, headers, bibliothèques statiques
-- ✅ **Tests & Qualité** : Tests unitaires, edge cases, gestion d'erreurs
+**Durée** : ~120 heures de formation intensive (4 semaines)
+**Statut** : 85% complété | ~9000 lignes de code | 70+ exercices
 
 ---
 
-## 📊 Matrice de Compétences Détaillée
+## 🎯 Compétences Acquises
 
-### 1️⃣ ALGORITHMIQUE & COMPLEXITÉ
+### Compétences Principales
 
-#### Niveau Confirmé ⭐⭐⭐⭐
-
-**Compétences maîtrisées :**
-- Analyse de complexité temporelle et spatiale (Big O notation)
-- Algorithmes de tri : Bubble Sort, Selection Sort, Insertion Sort, Quick Sort, Merge Sort
-- Algorithmes de recherche : Linéaire O(n), Binaire O(log n)
-- Récursion : Fibonacci, Factorial, Tours de Hanoï, Palindrome
-- Techniques d'optimisation : √n pour nombres premiers, exponentiation rapide
-
-**Réalisations concrètes :**
-```
-✓ 12 algorithmes de tri/recherche implémentés
-✓ 8 fonctions récursives optimisées
-✓ Comparaison de performances (benchmarks)
-✓ Passage de O(n²) à O(n log n) sur tri de 10k éléments
-```
-
-**Exercices clés :**
-- `ft_quick_sort.c` - Tri rapide avec partition (O(n log n))
-- `ft_merge_sort.c` - Tri fusion avec allocation dynamique
-- `ft_binary_search.c` - Recherche binaire sur tableau trié
-- `ft_fibonacci.c` - Optimisation avec memoization
-- `challenge_ft_tower_hanoi.c` - Résolution récursive classique
-
-**Transfert vers JavaScript :**
-- Compréhension profonde des Array.sort() internes (V8 = TimSort)
-- Optimisation de boucles for/while vs .map/.filter/.reduce
-- Choix éclairés entre approches itératives et récursives
+| Domaine | Compétences Développées | Exercices |
+|---------|------------------------|-----------|
+| **Algorithmique** | Tri (Bubble, Quick, Merge), Recherche (linéaire, binaire), Récursion, Complexité Big O | 35 exercices |
+| **Structures de données** | Tableaux, listes chaînées, hash tables, arbres binaires | 18 implémentations |
+| **Gestion mémoire** | malloc/free, pointeurs, valgrind, détection fuites mémoire | 45+ programmes |
+| **Programmation système** | fork, exec, pipes, signals, processus | Mini-shell |
+| **Chaînes de caractères** | Manipulation, parsing, conversion | 20 exercices |
+| **Debugging** | GDB, Valgrind, profiling | 70+ programmes |
+| **Build & Tooling** | Makefile, compilation, flags GCC | 8 Makefiles |
 
 ---
 
-### 2️⃣ STRUCTURES DE DONNÉES
+## 📁 Structure du Projet
 
-#### Niveau Confirmé ⭐⭐⭐⭐
-
-**Compétences maîtrisées :**
-- Tableaux statiques et dynamiques
-- Listes chaînées simples : création, insertion, suppression, inversion, tri
-- Structures personnalisées (struct)
-- Hash tables avec gestion des collisions
-- Arbres binaires (en cours)
-
-**Réalisations concrètes :**
 ```
-✓ Implémentation complète de linked list (9 opérations)
-✓ Hash table avec fonction de hachage personnalisée
-✓ Structures pour données complexes (Student, Book, Point)
-✓ Gestion mémoire 100% sans fuites (valgrind)
+piscine-C/
+├── Semaine1/
+│   ├── jour01/              # Bases C (variables, types, conditions)
+│   ├── jour02/              # Boucles et fonctions
+│   ├── jour03/              # Récursion et optimisation
+│   ├── jour04/              # Pointeurs et tableaux
+│   ├── jour05/              # Makefile & Git
+│   └── jour06/              # Libft (bibliothèque personnelle)
+│
+├── Semaine2/
+│   ├── jour07/              # Allocation dynamique
+│   ├── jour08/              # Listes chaînées
+│   ├── jour09/              # Hash tables
+│   └── jour10/              # Arbres binaires
+│
+├── Semaine3/
+│   ├── jour11/              # Programmation système (fork, exec)
+│   ├── jour12/              # Pipes et signaux
+│   └── jour13/              # Mini-shell
+│
+├── Semaine4/
+│   ├── jour14/              # Parsing et arguments
+│   ├── jour15/              # Fichiers et I/O
+│   └── projet-final/        # Mini-grep, benchmarks
+│
+└── README.md                # Ce fichier
 ```
-
-**Exercices clés :**
-- `ft_list_create.c` - Création de maillon avec malloc
-- `ft_list_reverse.c` - Inversion de liste en O(n)
-- `ft_list_sort.c` - Tri de liste chaînée
-- `ft_hashtable_insert.c` - Insertion avec gestion collisions
-- `ft_strdup.c` - Duplication de chaîne avec allocation dynamique
-
-**Transfert vers JavaScript :**
-- Compréhension des LinkedList natives (non exposées en JS)
-- Optimisation Map/Set (hash table JS)
-- Choix Array vs Map selon complexité recherche
-- Structures immuables vs mutables (performance trade-offs)
 
 ---
 
-### 3️⃣ GESTION MÉMOIRE
+## 🏆 Semaines Réalisées
 
-#### Niveau Confirmé ⭐⭐⭐⭐
+### Semaine 1 : Fondamentaux C ✅ 100%
 
-**Compétences maîtrisées :**
-- Allocation dynamique : malloc, calloc, realloc, free
-- Détection et correction de fuites mémoire (valgrind)
-- Gestion des pointeurs : passage par référence, adressage
-- Buffer overflows et segmentation faults
-- Memory pools et allocateurs personnalisés (en cours)
+#### Jour 01 : Bases de C
+**Description** : Variables, types de données, opérateurs, conditions
 
-**Réalisations concrètes :**
-```
-✓ 0 leaks sur 45+ programmes validés par valgrind
-✓ Gestion d'erreurs sur malloc (NULL check systématique)
-✓ Free correcte des structures complexes (listes, tableaux 2D)
-✓ Protection contre buffer overflow
-```
+**Exercices** :
+- ex00 : Hello World
+- ex01 : Variables et types (int, char, float)
+- ex02 : Opérateurs arithmétiques (+, -, *, /, %)
+- ex03 : Conditions (if/else, switch)
+- ex04 : Opérateurs logiques (&&, ||, !)
 
-**Exercices clés :**
-- `ft_range.c` - Allocation tableau dynamique
-- `ft_split_whitespaces.c` - Allocation de tableau de chaînes
-- `ft_concat.c` - Concaténation avec réallocation
-- `ft_list_clear.c` - Libération récursive de liste
-- `challenge_ft_realloc_safe.c` - Wrapper sécurisé realloc
-
-**Metrics de qualité :**
-```bash
-$ valgrind --leak-check=full ./ft_split
-==12345== HEAP SUMMARY:
-==12345==     in use at exit: 0 bytes in 0 blocks
-==12345==   total heap usage: 47 allocs, 47 frees
-==12345== All heap blocks were freed -- no leaks are possible
-```
-
-**Transfert vers JavaScript :**
-- Compréhension du garbage collector V8 (mark-and-sweep)
-- Éviter les memory leaks (closures, event listeners)
-- Optimisation WeakMap/WeakSet pour caches
-- Profiling mémoire Chrome DevTools
+**Compétences acquises** :
+- ✅ Compilation avec GCC
+- ✅ Types de données en C
+- ✅ Structures de contrôle
+- ✅ Format d'affichage (printf)
 
 ---
 
-### 4️⃣ PROGRAMMATION SYSTÈME UNIX
+#### Jour 02 : Boucles et Fonctions
+**Description** : for, while, do-while, fonctions personnalisées
 
-#### Niveau Intermédiaire ⭐⭐⭐
+**Exercices** :
+- ex00 : Boucle for (affichage 1-100)
+- ex01 : Boucle while (factorielle)
+- ex02 : do-while (menu interactif)
+- ex03 : Fonctions simples (ft_add, ft_sub)
+- ex04 : Prototypes et headers
 
-**Compétences maîtrisées :**
-- Appels système : write, read, open, close
-- Processus : fork, execve, waitpid, exit
-- Redirections et pipes (I/O)
-- Signaux : SIGINT, SIGTERM, SIGKILL
-- Variables d'environnement (env, getenv)
+**Compétences acquises** :
+- ✅ Boucles (for, while, do-while)
+- ✅ Création de fonctions
+- ✅ Prototypes et headers
+- ✅ Passage de paramètres
 
-**Réalisations concrètes :**
-```
-✓ Mini-shell avec built-ins (cd, exit, env, pwd)
-✓ Gestion de pipelines (cmd1 | cmd2)
-✓ Redirections (>, <, >>)
-✓ Ctrl+C handling avec signal handlers
-✓ Parsing et exécution de commandes
-```
-
-**Exercices clés :**
-- `minishell.c` - Shell interactif complet
-- `ft_cat.c` - Lecture et affichage fichiers
-- `ft_wc.c` - Comptage lignes/mots/caractères
-- `minigrep.c` - Recherche de patterns (clone grep)
-- `ft_cp.c` - Copie de fichiers avec buffers
-
-**Exemple de code (fork/exec) :**
+**Exemple de code** :
 ```c
-pid_t pid = fork();
-if (pid == 0) {
-    // Processus enfant
-    execve("/bin/ls", argv, envp);
-    exit(1); // Si execve échoue
-} else {
-    // Processus parent
-    waitpid(pid, &status, 0);
+// Factorielle itérative
+int ft_factorial(int n) {
+    int result = 1;
+    int i = 1;
+    while (i <= n) {
+        result *= i;
+        i++;
+    }
+    return result;
 }
 ```
 
-**Transfert vers JavaScript :**
-- Node.js child_process : spawn, exec, fork
-- Stream API (stdin, stdout, stderr)
-- Process signals (SIGTERM, SIGINT)
-- Environnement process.env
+---
+
+#### Jour 03 : Récursion ✅ 100%
+**Description** : Fonctions récursives et optimisation
+
+**Exercices réalisés** :
+- ✅ `ft_factorial.c` - Factorielle récursive
+- ✅ `ft_power.c` - Puissance (x^n)
+- ✅ `ft_sqrt.c` - Racine carrée (méthode de Newton)
+- ✅ `ft_is_prime.c` - Test de primalité (optimisé √n)
+- ✅ `challenge_ft_find_next_prime.c` - Prochain nombre premier
+
+**Compétences acquises** :
+- ✅ Récursion simple et double
+- ✅ Optimisation algorithmique (√n pour nombres premiers)
+- ✅ Cas de base et récursion terminale
+- ✅ Analyse de complexité
+
+**Exemple de code** :
+```c
+// Test de primalité optimisé
+int ft_is_prime(int nb) {
+    int i;
+
+    if (nb < 2)
+        return 0;
+    if (nb == 2)
+        return 1;
+    if (nb % 2 == 0)
+        return 0;
+
+    i = 3;
+    while (i * i <= nb) {  // Optimisation : √n au lieu de n
+        if (nb % i == 0)
+            return 0;
+        i += 2;
+    }
+    return 1;
+}
+// Complexité : O(√n)
+```
+
+**Connexions avec JavaScript** :
+```javascript
+// Équivalent JS avec optimisation similaire
+function isPrime(n) {
+    if (n < 2) return false;
+    if (n === 2) return true;
+    if (n % 2 === 0) return false;
+
+    for (let i = 3; i * i <= n; i += 2) {
+        if (n % i === 0) return false;
+    }
+    return true;
+}
+```
 
 ---
 
-### 5️⃣ DÉVELOPPEMENT LOGICIEL PROFESSIONNEL
+#### Jour 04 : Pointeurs et Tableaux ✅ 100%
+**Description** : Manipulation de pointeurs et tableaux
 
-#### Niveau Confirmé ⭐⭐⭐⭐
+**Exercices réalisés** :
+- ✅ `ft_swap.c` - Échange de valeurs avec pointeurs
+- ✅ `ft_sort_int_tab.c` - Tri à bulles (Bubble Sort)
+- ✅ `ft_rev_int_tab.c` - Inversion de tableau (Two Pointers)
+- ✅ `challenge_ft_max.c` - Maximum dans un tableau
 
-**Compétences maîtrisées :**
-- **Build Automation** : Makefile avec rules (all, clean, fclean, re)
-- **Version Control** : Git workflow, commits conventionnels, branches
-- **Normes de code** : Style 42, cohérence, lisibilité
-- **Documentation** : README, commentaires, guides utilisateur
-- **Testing** : Tests unitaires manuels, edge cases, validation
+**Compétences acquises** :
+- ✅ Pointeurs (* et &)
+- ✅ Arithmétique de pointeurs
+- ✅ Tableaux et parcours
+- ✅ Pattern Two Pointers
 
-**Réalisations concrètes :**
+**Exemple de code** :
+```c
+// Two Pointers pour inversion de tableau
+void ft_rev_int_tab(int *tab, int size) {
+    int i = 0;
+    int tmp;
+
+    while (i < size / 2) {
+        tmp = tab[i];
+        tab[i] = tab[size - 1 - i];
+        tab[size - 1 - i] = tmp;
+        i++;
+    }
+}
+// Complexité : O(n/2) = O(n), Space O(1)
 ```
-✓ 8 Makefiles pour compilation automatisée
-✓ 15+ commits Git structurés avec messages clairs
-✓ 70+ fichiers de tests unitaires
-✓ 17 fichiers de documentation (README.md)
-✓ Bibliothèque statique (libft.a) complète
+
+**Connexions avec JavaScript** :
+```javascript
+// Two Pointers en JS
+function reverseArray(arr) {
+    let left = 0, right = arr.length - 1;
+    while (left < right) {
+        [arr[left], arr[right]] = [arr[right], arr[left]];
+        left++;
+        right--;
+    }
+    return arr;
+}
 ```
 
-**Exemple de Makefile :**
+---
+
+#### Jour 05 : Makefile & Git ✅ 100%
+**Description** : Automatisation de la compilation et gestion de versions
+
+**Exercices réalisés** :
+- ✅ Makefile simple avec règles (all, clean, fclean, re)
+- ✅ Compilation avec flags (-Wall -Wextra -Werror)
+- ✅ Variables Makefile ($@, $<, $^)
+- ✅ Gestion Git (commit, push, branches)
+
+**Compétences acquises** :
+- ✅ Écriture de Makefiles
+- ✅ Flags de compilation GCC
+- ✅ Dépendances et recompilation
+- ✅ Git (conventional commits)
+
+**Exemple de Makefile** :
 ```makefile
 NAME = libft.a
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
-SRCS = ft_strlen.c ft_strcmp.c ft_strcpy.c
+SRCS = ft_strlen.c ft_strcpy.c ft_strcmp.c
 OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJS)
@@ -247,512 +269,706 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
-```
 
-**Git Workflow :**
-```bash
-git checkout -b feature/add-linked-list
-git add Semaine3/jour14/*.c
-git commit -m "feat(linked-list): implement reverse and sort operations"
-git push origin feature/add-linked-list
-```
-
-**Transfert vers JavaScript :**
-- npm scripts équivalents aux Makefiles
-- Git conventionnel (feat, fix, refactor, docs)
-- ESLint/Prettier pour normes de code
-- JSDoc pour documentation
-- Jest/Vitest pour tests unitaires
-
----
-
-## 🛠️ Outils et Technologies Maîtrisés
-
-### Environnement de Développement
-
-| Outil | Utilisation | Niveau |
-|-------|-------------|--------|
-| **GCC/Clang** | Compilation avec -Wall -Wextra -Werror | ⭐⭐⭐⭐ |
-| **Make** | Automation build, dépendances | ⭐⭐⭐⭐ |
-| **GDB** | Debugging interactif, breakpoints | ⭐⭐⭐ |
-| **Valgrind** | Détection memory leaks, profiling | ⭐⭐⭐⭐ |
-| **Git** | Version control, branches, rebase | ⭐⭐⭐⭐ |
-| **Vim/Neovim** | Édition efficace, LazyVim config | ⭐⭐⭐ |
-
-### Commandes et Workflow
-
-```bash
-# Compilation stricte
-gcc -Wall -Wextra -Werror -std=c99 -g file.c -o program
-
-# Vérification mémoire
-valgrind --leak-check=full --show-leak-kinds=all ./program
-
-# Debugging
-gdb ./program
-(gdb) break main
-(gdb) run
-(gdb) next
-
-# Build automation
-make          # Compile
-make clean    # Supprime .o
-make fclean   # Supprime tout
-make re       # Recompile
+.PHONY: all clean fclean re
 ```
 
 ---
 
-## 📈 Metrics et Indicateurs de Performance
+#### Jour 06 : Libft (Bibliothèque personnelle) ✅ 100%
+**Description** : Recréation de fonctions standard de la libc
 
-### Volume de Production
-
-```
-📁 Fichiers créés       : ~100 fichiers C
-📝 Lignes de code       : ~9000 lignes
-📚 Documentation        : 17 fichiers MD (~85 KB)
-🎯 Exercices résolus    : 70+ exercices
-🚀 Projets complets     : 5 projets
-⏱️  Temps investi        : ~120 heures (4 semaines)
-```
-
-### Qualité du Code
-
-```
-✅ Compilation warnings  : 0 (100% clean avec -Wall -Wextra -Werror)
-✅ Memory leaks          : 0 (validé par valgrind sur 45+ programmes)
-✅ Segfaults            : 0 (gestion erreurs robuste)
-✅ Tests réussis        : 70/70 exercices (100%)
-✅ Respect norme        : 100% (style 42)
-```
-
-### Complexité Algorithmique Maîtrisée
-
-| Algorithme | Complexité | Implémentation |
-|------------|-----------|----------------|
-| Recherche linéaire | O(n) | ✅ ft_find_int.c |
-| Recherche binaire | O(log n) | ✅ ft_binary_search.c |
-| Bubble Sort | O(n²) | ✅ ft_bubble_sort.c |
-| Quick Sort | O(n log n) avg | ✅ ft_quick_sort.c |
-| Merge Sort | O(n log n) | ✅ ft_merge_sort.c |
-| Hash Table insert | O(1) avg | ✅ ft_hashtable_insert.c |
-| Linked list reverse | O(n) | ✅ ft_list_reverse.c |
-| Fibonacci (memo) | O(n) | ✅ ft_fibonacci.c |
-
----
-
-## 🏆 Projets Réalisés (Portfolio)
-
-### 1. Mini-Shell (Semaine 3)
-**Description :** Shell Unix basique avec parsing et exécution de commandes
-**Technologies :** C, fork, execve, pipes, signals
-**Fonctionnalités :**
-- ✅ Parsing de commandes avec arguments
-- ✅ Built-ins : cd, exit, env, pwd, export, unset
-- ✅ Exécution de binaires système (/bin/ls, /usr/bin/grep)
-- ✅ Pipelines (cmd1 | cmd2 | cmd3)
-- ✅ Redirections (<, >, >>)
-- ✅ Gestion Ctrl+C (SIGINT)
-- ✅ Variables d'environnement
-
-**Compétences démontrées :** Programmation système, parsing, processus Unix
-
-**Équivalent JS :** Node.js CLI avec child_process et readline
-
----
-
-### 2. Libft - Bibliothèque C Standard (Semaine 1-2)
-**Description :** Recréation de 40+ fonctions de la libc
-**Technologies :** C, Makefile, bibliothèque statique (.a)
-**Fonctions implémentées :**
+**Fonctions implémentées** :
 ```c
-// String manipulation
-ft_strlen, ft_strcmp, ft_strcpy, ft_strdup, ft_strcat
+// Strings
+ft_strlen()     // Longueur d'une chaîne
+ft_strcpy()     // Copie de chaîne
+ft_strncpy()    // Copie avec limite
+ft_strcmp()     // Comparaison
+ft_strcat()     // Concaténation
+ft_strdup()     // Duplication avec malloc
 
-// Memory management
-ft_memset, ft_memcpy, ft_memmove, ft_memcmp, ft_calloc
-
-// Character checks
-ft_isalpha, ft_isdigit, ft_isalnum, ft_toupper, ft_tolower
+// Memory
+ft_memset()     // Remplissage mémoire
+ft_bzero()      // Mise à zéro
+ft_memcpy()     // Copie mémoire
+ft_memcmp()     // Comparaison mémoire
 
 // Conversion
-ft_atoi, ft_itoa
+ft_atoi()       // String to int
+ft_itoa()       // Int to string
 
-// Lists
-ft_lstnew, ft_lstadd_front, ft_lstsize, ft_lstlast
+// Character checks
+ft_isalpha()    // Test alphabétique
+ft_isdigit()    // Test chiffre
+ft_isalnum()    // Test alphanumérique
 ```
 
-**Compétences démontrées :** Architecture modulaire, API design, testing
+**Compétences acquises** :
+- ✅ Manipulation de chaînes de caractères
+- ✅ Gestion mémoire (malloc, free)
+- ✅ Création de bibliothèque statique (.a)
+- ✅ Documentation et tests
 
-**Équivalent JS :** Création de bibliothèque npm avec tests unitaires
-
----
-
-### 3. Guess Game avec IA (Semaine 2)
-**Description :** Jeu de devinettes avec mode IA utilisant recherche binaire
-**Technologies :** C, structures, algorithmes de recherche
-**Fonctionnalités :**
-- ✅ Mode joueur humain (deviner le nombre)
-- ✅ Mode IA (ordinateur devine en ≤ log₂(n) coups)
-- ✅ Choix de difficulté (1-100, 1-1000, 1-1000000)
-- ✅ Statistiques et scores
-- ✅ Menu interactif
-
-**Algorithme IA :**
+**Exemple de code** :
 ```c
-// Binary search pour deviner en O(log n)
-while (low <= high) {
-    guess = (low + high) / 2;
-    printf("Je propose : %d\n", guess);
+// ft_strdup - Duplication avec allocation
+char *ft_strdup(const char *s) {
+    char *dup;
+    int len = 0;
+    int i;
 
-    if (response == '+')      // Trop petit
-        low = guess + 1;
-    else if (response == '-') // Trop grand
-        high = guess - 1;
-    else                      // Trouvé !
-        break;
+    // Calcul de la longueur
+    while (s[len])
+        len++;
+
+    // Allocation
+    dup = (char *)malloc(sizeof(char) * (len + 1));
+    if (!dup)
+        return NULL;
+
+    // Copie
+    i = 0;
+    while (i < len) {
+        dup[i] = s[i];
+        i++;
+    }
+    dup[i] = '\0';
+
+    return dup;
 }
 ```
 
-**Compétences démontrées :** Algorithmes de recherche, structures de données
-
-**Équivalent JS :** Jeu web React avec algorithme de recherche optimisé
-
 ---
 
-### 4. Mini-Grep (Semaine 4)
-**Description :** Clone simplifié de grep avec recherche de patterns
-**Technologies :** C, I/O fichiers, expressions régulières basiques
-**Fonctionnalités :**
-- ✅ Recherche de chaîne dans fichiers
-- ✅ Options : -i (insensible casse), -n (numéros ligne), -c (comptage)
-- ✅ Colorisation ANSI des résultats
-- ✅ Recherche récursive dans répertoires
-- ✅ Gestion de stdin (cat file | minigrep pattern)
+### Semaine 2 : Structures de Données ✅ 80%
 
-**Compétences démontrées :** File I/O, parsing, regex, ANSI codes
+#### Jour 07 : Allocation Dynamique ✅ 100%
+**Description** : malloc, free, calloc, realloc
 
-**Équivalent JS :** Node.js CLI avec fs et chalk pour couleurs
+**Exercices réalisés** :
+- ✅ Allocation simple (malloc/free)
+- ✅ Tableaux dynamiques
+- ✅ Matrices 2D
+- ✅ Gestion d'erreurs (NULL checks)
+- ✅ Détection de fuites (Valgrind)
 
----
+**Compétences acquises** :
+- ✅ malloc() et free()
+- ✅ Gestion d'erreurs d'allocation
+- ✅ Valgrind pour détecter les leaks
+- ✅ Tableaux dynamiques redimensionnables
 
-### 5. Algorithmes de Tri - Benchmark (Semaine 2)
-**Description :** Comparaison de performances entre algorithmes de tri
-**Technologies :** C, profiling, mesure de temps
-**Algorithmes comparés :**
-- Bubble Sort O(n²)
-- Selection Sort O(n²)
-- Insertion Sort O(n²)
-- Quick Sort O(n log n)
-- Merge Sort O(n log n)
+**Exemple de code** :
+```c
+// Allocation d'un tableau dynamique
+int *create_array(int size) {
+    int *arr;
+    int i;
 
-**Résultats (10000 éléments aléatoires) :**
+    arr = (int *)malloc(sizeof(int) * size);
+    if (!arr)
+        return NULL;  // Gestion d'erreur
+
+    // Initialisation
+    i = 0;
+    while (i < size) {
+        arr[i] = 0;
+        i++;
+    }
+
+    return arr;
+}
+
+// Usage avec vérification
+int main() {
+    int *arr = create_array(100);
+    if (!arr) {
+        printf("Allocation failed\n");
+        return 1;
+    }
+
+    // Utilisation...
+
+    free(arr);  // Libération obligatoire
+    return 0;
+}
 ```
-Bubble Sort    : 245 ms
-Selection Sort : 198 ms
-Insertion Sort : 187 ms
-Quick Sort     : 2.3 ms  ← 100x plus rapide
-Merge Sort     : 2.8 ms
-```
 
-**Compétences démontrées :** Analyse de complexité, optimisation
-
-**Équivalent JS :** Benchmarking avec performance.now()
-
----
-
-## 📚 Détail par Semaine
-
-### Semaine 1 : Syntaxe & Bases (18-26h) ✅ 100%
-
-**Objectifs :** Maîtriser la syntaxe C, pointeurs basiques, compilation
-
-**Exercices réalisés (27 fichiers) :**
-- jour01 : Affichage (`ft_putchar`, `ft_print_alphabet`, combinaisons)
-- jour02 : Chaînes (`ft_strlen`, `ft_strcmp`, `ft_strcpy`, `ft_strrev`)
-- jour03 : Mathématiques (`factorial`, `power`, `sqrt`, `is_prime`)
-- jour04 : Tableaux (`ft_swap`, `ft_sort`, `ft_reverse`, `ft_max`)
-- jour05 : Makefile & Git
-- jour06 : Libft & `ft_printf` simplifié
-
-**Compétences clés :**
-- ✅ Syntaxe C complète (variables, types, opérateurs, boucles)
-- ✅ Pointeurs et passage par référence
-- ✅ Manipulation de chaînes (char *)
-- ✅ Algorithmes basiques (factorielle, nombres premiers)
-- ✅ Compilation avec flags (-Wall -Wextra -Werror)
-
----
-
-### Semaine 2 : Algorithmique (26-32h) ✅ 100%
-
-**Objectifs :** Algorithmes de tri/recherche, récursion, complexité
-
-**Exercices réalisés (35 fichiers) :**
-- jour07 : Récursion (Fibonacci, Tours de Hanoï, palindrome)
-- jour08 : Tri (Bubble, Selection, Quick Sort, Merge Sort)
-- jour09 : Recherche (linéaire, binaire, substring)
-- jour10 : Strings avancés (ROT13, capitalize, count words)
-- jour11 : word_sort (tri de mots avec argc/argv)
-- jour12 : Guess Game (projet complet avec IA)
-
-**Compétences clés :**
-- ✅ Récursion et cas de base
-- ✅ Algorithmes O(n log n) (Quick Sort, Merge Sort)
-- ✅ Recherche binaire O(log n)
-- ✅ Parsing et manipulation de chaînes
-- ✅ Gestion argc/argv (arguments ligne de commande)
-
----
-
-### Semaine 3 : Mémoire & Pointeurs (32-40h) ⏳ 70%
-
-**Objectifs :** Allocation dynamique, listes chaînées, structures
-
-**Exercices réalisés (12 fichiers) :**
-- jour13 : malloc/free (`ft_strdup`, `ft_range`, `ft_split`)
-- jour14 : Linked lists (`create`, `reverse`, `sort`)
-- jour15 : Structures (Point, Student, Book) - en cours
-- jour17 : Mini-shell - documentation complète
-
-**Compétences clés :**
-- ✅ Allocation dynamique (malloc, calloc, realloc, free)
-- ✅ Valgrind 0 leaks (100% memory safe)
-- ✅ Listes chaînées (création, parcours, inversion)
-- 🔄 Structures et typedef
-- 🔄 Processus Unix (fork, exec)
-
----
-
-### Semaine 4 : Projets Avancés (40-54h) 🔄 20%
-
-**Objectifs :** File I/O, hash tables, optimisation, projet final
-
-**Exercices prévus :**
-- jour19 : File manipulation (cat, wc, cp, tail, hexdump)
-- jour20 : Mini-grep complet
-- jour21 : Hash Table implémentation
-- jour22 : Libft complète (40+ fonctions)
-- jour23 : Optimisation et profiling
-- jour24 : Projet final (compilateur ou HTTP server)
-
-**Compétences visées :**
-- 🔄 File I/O (open, read, write, close)
-- 🔄 Hash tables et gestion collisions
-- 🔄 Profiling et optimisation
-- 🔄 Projet système complet
-
----
-
-## 💼 Compétences Valorisables en ESN
-
-### Pour Missions Embarquées / Système
-
-**Profil cible :** Développement embarqué, IoT, système temps réel
-
-✅ **Gestion mémoire manuelle** : malloc/free, optimisation RAM
-✅ **Algorithmique performante** : O(log n), O(n log n)
-✅ **Programmation bas-niveau** : pointeurs, bits, optimisation
-✅ **Debugging avancé** : GDB, Valgrind, memory profiling
-✅ **Cross-compétence JS** : IoT (Node.js + C modules natifs)
-
-**Exemples de missions :**
-- Firmware IoT (C) avec dashboard web (React)
-- Optimisation d'algorithmes critiques en C pour Node.js
-- Développement de modules natifs Node.js (N-API)
-
----
-
-### Pour Missions Performance-Critical
-
-**Profil cible :** Fintech, Gaming, Data Processing
-
-✅ **Optimisation algorithmique** : Passage O(n²) → O(n log n)
-✅ **Profiling et benchmarking** : Mesure de performances
-✅ **Structures de données optimales** : Hash tables, arbres
-✅ **Compréhension bas-niveau** : Cache CPU, alignement mémoire
-✅ **WebAssembly** : Compilation C → WASM pour performance web
-
-**Exemples de missions :**
-- Trading algorithms haute fréquence
-- Game engines (WebGL + WASM)
-- Data processing pipelines optimisés
-
----
-
-### Pour Missions Full-Stack avec Expertise
-
-**Profil cible :** Lead developer, architecte logiciel
-
-✅ **Architecture logicielle** : Modules, API design, bibliothèques
-✅ **Algorithmique avancée** : Choix éclairés de data structures
-✅ **Debugging complexe** : Memory leaks, race conditions
-✅ **Performance web** : V8 internals, optimization patterns
-✅ **Technical leadership** : Code reviews, best practices
-
-**Exemples de missions :**
-- Architecte solution Full-Stack
-- Lead dev avec expertise performance
-- Code reviewer senior avec focus qualité
-
----
-
-## 🎓 Certifications et Validations
-
-### Auto-évaluation Technique
-
-| Catégorie | Niveau Débutant | Niveau Confirmé | Niveau Expert |
-|-----------|----------------|----------------|---------------|
-| **Syntaxe C** | ✅ | ✅ | ⏳ |
-| **Pointeurs & Mémoire** | ✅ | ✅ | ⏳ |
-| **Algorithmique** | ✅ | ✅ | 🔄 |
-| **Structures de données** | ✅ | ✅ | 🔄 |
-| **Programmation système** | ✅ | ⏳ | ❌ |
-| **Optimisation** | ✅ | 🔄 | ❌ |
-
-**Légende :** ✅ Maîtrisé | ⏳ En cours | 🔄 Pratiqué | ❌ Pas encore abordé
-
----
-
-### Validation par les Pairs
-
-**Code Reviews :**
-- ✅ 15+ commits revus et approuvés
-- ✅ Respect norme 42 (style, cohérence)
-- ✅ 0 warnings GCC avec -Wall -Wextra -Werror
-
-**Tests Unitaires :**
-- ✅ 70+ exercices testés et validés
-- ✅ Edge cases couverts (NULL, "", 0, INT_MAX, etc.)
-- ✅ 100% success rate sur tests automatisés
-
-**Outils de Validation :**
+**Détection de fuites avec Valgrind** :
 ```bash
-# Tous les programmes passent ces checks
-gcc -Wall -Wextra -Werror -std=c99 -g *.c -o test
-valgrind --leak-check=full --show-leak-kinds=all ./test
-# ✅ 0 errors, 0 warnings, 0 leaks
+gcc -g program.c -o program
+valgrind --leak-check=full ./program
+
+# Résultat attendu :
+# All heap blocks were freed -- no leaks are possible
 ```
 
 ---
 
-## 📞 Informations de Contact
+#### Jour 08 : Listes Chaînées ✅ 100%
+**Description** : Implémentation complète de linked lists
+
+**Structure de base** :
+```c
+typedef struct s_list {
+    int data;
+    struct s_list *next;
+} t_list;
+```
+
+**Opérations implémentées** :
+- ✅ `ft_create_node()` - Création d'un nœud
+- ✅ `ft_list_push_front()` - Insertion en tête
+- ✅ `ft_list_push_back()` - Insertion en queue
+- ✅ `ft_list_size()` - Taille de la liste
+- ✅ `ft_list_at()` - Accès par index
+- ✅ `ft_list_remove_if()` - Suppression conditionnelle
+- ✅ `ft_list_reverse()` - Inversion de la liste
+- ✅ `ft_list_sort()` - Tri (Bubble Sort)
+- ✅ `ft_list_clear()` - Libération mémoire
+
+**Compétences acquises** :
+- ✅ Structures chaînées
+- ✅ Manipulation de pointeurs complexes
+- ✅ Gestion mémoire dynamique
+- ✅ Algorithmes sur listes
+
+**Exemple de code** :
+```c
+// Création d'un nœud
+t_list *ft_create_node(int data) {
+    t_list *new_node;
+
+    new_node = (t_list *)malloc(sizeof(t_list));
+    if (!new_node)
+        return NULL;
+
+    new_node->data = data;
+    new_node->next = NULL;
+    return new_node;
+}
+
+// Insertion en tête O(1)
+void ft_list_push_front(t_list **head, int data) {
+    t_list *new_node;
+
+    new_node = ft_create_node(data);
+    if (!new_node)
+        return;
+
+    new_node->next = *head;
+    *head = new_node;
+}
+
+// Inversion de liste (Two Pointers)
+void ft_list_reverse(t_list **head) {
+    t_list *prev = NULL;
+    t_list *current = *head;
+    t_list *next;
+
+    while (current) {
+        next = current->next;
+        current->next = prev;
+        prev = current;
+        current = next;
+    }
+
+    *head = prev;
+}
+// Complexité : O(n), Space O(1)
+```
+
+**Connexions avec JavaScript** :
+```javascript
+// Équivalent en JavaScript
+class Node {
+    constructor(data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+
+class LinkedList {
+    constructor() {
+        this.head = null;
+    }
+
+    pushFront(data) {
+        const newNode = new Node(data);
+        newNode.next = this.head;
+        this.head = newNode;
+    }
+
+    reverse() {
+        let prev = null;
+        let current = this.head;
+        while (current) {
+            const next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+        this.head = prev;
+    }
+}
+```
+
+---
+
+#### Jour 09 : Hash Tables 🔄 60%
+**Description** : Implémentation d'une table de hachage
+
+**Structure de base** :
+```c
+#define TABLE_SIZE 100
+
+typedef struct s_entry {
+    char *key;
+    int value;
+    struct s_entry *next;  // Gestion des collisions
+} t_entry;
+
+typedef struct s_hashtable {
+    t_entry *table[TABLE_SIZE];
+} t_hashtable;
+```
+
+**Fonctions implémentées** :
+- ✅ `hash_function()` - Fonction de hachage (djb2)
+- ✅ `ht_create()` - Création de la table
+- ✅ `ht_insert()` - Insertion avec gestion collisions
+- ✅ `ht_search()` - Recherche O(1) moyen
+- 🔄 `ht_delete()` - Suppression (en cours)
+
+**Compétences acquises** :
+- ✅ Fonction de hachage
+- ✅ Gestion des collisions (chaînage)
+- ✅ Complexité O(1) amortie
+
+**Exemple de code** :
+```c
+// Fonction de hachage djb2
+unsigned long hash_function(const char *str) {
+    unsigned long hash = 5381;
+    int c;
+
+    while ((c = *str++))
+        hash = ((hash << 5) + hash) + c;  // hash * 33 + c
+
+    return hash % TABLE_SIZE;
+}
+
+// Insertion avec gestion des collisions
+void ht_insert(t_hashtable *ht, const char *key, int value) {
+    unsigned long index = hash_function(key);
+    t_entry *new_entry = create_entry(key, value);
+
+    // Collision : chaînage
+    new_entry->next = ht->table[index];
+    ht->table[index] = new_entry;
+}
+```
+
+---
+
+#### Jour 10 : Arbres Binaires 🔄 50%
+**Description** : Introduction aux arbres binaires de recherche (BST)
+
+**Structure de base** :
+```c
+typedef struct s_tree {
+    int data;
+    struct s_tree *left;
+    struct s_tree *right;
+} t_tree;
+```
+
+**Opérations en cours** :
+- ✅ `tree_create_node()` - Création d'un nœud
+- ✅ `tree_insert()` - Insertion BST
+- ✅ `tree_search()` - Recherche O(log n)
+- 🔄 `tree_inorder()` - Parcours in-order
+- 🔄 `tree_delete()` - Suppression
+
+---
+
+### Semaine 3 : Programmation Système 🔄 60%
+
+#### Jour 11 : Processus (fork, exec) 🔄 70%
+**Description** : Création et gestion de processus
+
+**Exercices réalisés** :
+- ✅ `fork()` - Création de processus enfant
+- ✅ `exec()` - Remplacement de processus
+- ✅ `wait()` - Attente de terminaison
+- 🔄 `getpid()`, `getppid()` - Identifiants processus
+
+**Compétences acquises** :
+- ✅ Création de processus
+- ✅ Communication parent/enfant
+- ✅ Codes de retour
+
+**Exemple de code** :
+```c
+#include <unistd.h>
+#include <sys/wait.h>
+
+int main() {
+    pid_t pid = fork();
+
+    if (pid < 0) {
+        // Erreur
+        perror("fork failed");
+        return 1;
+    } else if (pid == 0) {
+        // Processus enfant
+        printf("Child process (PID: %d)\n", getpid());
+        execlp("/bin/ls", "ls", "-l", NULL);
+        perror("exec failed");
+        return 1;
+    } else {
+        // Processus parent
+        printf("Parent process (PID: %d), child PID: %d\n", getpid(), pid);
+        wait(NULL);  // Attente de l'enfant
+        printf("Child terminated\n");
+    }
+
+    return 0;
+}
+```
+
+---
+
+#### Jour 12 : Pipes et Signaux 🔄 50%
+**Description** : Communication inter-processus
+
+**Concepts abordés** :
+- ✅ `pipe()` - Communication unidirectionnelle
+- 🔄 `signal()` - Gestion de signaux (SIGINT, SIGTERM)
+- 🔄 Redirections (stdin, stdout, stderr)
+
+---
+
+#### Jour 13 : Mini-Shell 🔄 60%
+**Description** : Implémentation d'un shell basique
+
+**Fonctionnalités implémentées** :
+- ✅ Parsing de commandes
+- ✅ Exécution avec `fork()` et `exec()`
+- ✅ Commandes built-in (cd, exit)
+- 🔄 Redirections (>, <)
+- 🔄 Pipes (|)
+
+**Exemple de code** :
+```c
+// Boucle principale du shell
+void shell_loop() {
+    char *line;
+    char **args;
+    int status = 1;
+
+    while (status) {
+        printf("minishell> ");
+        line = read_line();
+        args = parse_line(line);
+        status = execute(args);
+
+        free(line);
+        free(args);
+    }
+}
+```
+
+---
+
+### Semaine 4 : Projets Avancés 🔄 40%
+
+#### Projet : Mini-Grep 🔄 60%
+**Description** : Implémentation simplifiée de grep
+
+**Fonctionnalités** :
+- ✅ Recherche de motif dans un fichier
+- ✅ Affichage des lignes correspondantes
+- 🔄 Options (-i, -n, -v)
+
+---
+
+#### Projet : Benchmarks et Optimisation 🔄 30%
+**Description** : Comparaison de performances algorithmiques
+
+**Comparaisons réalisées** :
+- ✅ Tri : Bubble Sort vs Quick Sort vs Merge Sort
+- 🔄 Recherche : Linéaire vs Binaire
+- 🔄 Allocation : Stack vs Heap
+
+---
+
+## 📊 Métriques du Projet
+
+### Volume de Code
+```
+📁 Semaines réalisées   : 3.5 / 4 semaines
+📝 Lignes de code       : ~9000 lignes C
+📚 Documentation        : 15+ fichiers README
+🎯 Exercices résolus    : 70+ exercices
+🚀 Projets              : 5 projets (libft, mini-shell, mini-grep, etc.)
+⏱️  Temps investi        : ~120 heures
+```
+
+### Qualité
+```
+✅ Compilation          : 0 warnings avec -Wall -Wextra -Werror
+✅ Memory leaks         : 0 leaks détectés (Valgrind)
+✅ Tests                : 70+ programmes testés et validés
+✅ Git commits          : 35+ commits structurés
+✅ Normes               : Respect des conventions C
+```
+
+### Algorithmes Implémentés
+
+| Algorithme | Complexité | Fichier |
+|------------|-----------|---------|
+| Bubble Sort | O(n²) | `ft_bubble_sort.c` |
+| Quick Sort | O(n log n) | `ft_quick_sort.c` |
+| Merge Sort | O(n log n) | `ft_merge_sort.c` |
+| Binary Search | O(log n) | `ft_binary_search.c` |
+| Two Pointers | O(n) | `ft_rev_int_tab.c` |
+| Récursion | Varie | `ft_factorial.c`, `ft_power.c` |
+| Liste chaînée | O(1)-O(n) | `jour08/*.c` |
+| Hash Table | O(1) moyen | `jour09/hashtable.c` |
+
+---
+
+## 🚀 Comment Utiliser ce Repository
+
+### Prérequis
+
+```bash
+# GCC compiler
+gcc --version  # Minimum : GCC 7.0
+
+# Valgrind (détection fuites mémoire)
+sudo apt-get install valgrind
+
+# GDB (debugging)
+sudo apt-get install gdb
+
+# Make
+sudo apt-get install make
+```
+
+### Compilation
+
+```bash
+# Cloner le repository
+git clone https://github.com/p4cm4n972/piscine-C.git
+cd piscine-C
+
+# Compiler un exercice
+cd Semaine1/jour03
+gcc -Wall -Wextra -Werror ft_is_prime.c -o ft_is_prime
+./ft_is_prime
+
+# Compiler avec Makefile (libft)
+cd Semaine1/jour06
+make
+# Crée libft.a
+
+# Tester avec Valgrind
+valgrind --leak-check=full ./program
+```
+
+### Debugging avec GDB
+
+```bash
+# Compiler avec symboles de debug
+gcc -g program.c -o program
+
+# Lancer GDB
+gdb ./program
+
+# Commandes GDB utiles
+(gdb) break main       # Point d'arrêt
+(gdb) run             # Exécuter
+(gdb) next            # Ligne suivante
+(gdb) print var       # Afficher variable
+(gdb) backtrace       # Call stack
+```
+
+---
+
+## 🎓 Compétences Transférables
+
+Les compétences acquises dans ce projet sont directement applicables à :
+
+### Développement Backend Performant
+- Gestion mémoire efficace (éviter les leaks)
+- Optimisation d'algorithmes (comprendre O(n))
+- Structures de données adaptées
+- Profiling et debugging
+
+### Algorithmique Avancée
+- Tri et recherche optimisés
+- Patterns (Two Pointers, Recursion)
+- Analyse de complexité
+- Trade-offs mémoire/vitesse
+
+### Programmation Système
+- Processus et threads
+- Communication inter-processus
+- Gestion de la mémoire bas-niveau
+- Debugging avancé
+
+### JavaScript/Node.js
+- Compréhension des performances V8
+- Optimisation de boucles
+- Choix de structures de données
+- Memory profiling
+
+---
+
+## 📚 Ressources et Références
+
+### Livres
+- [The C Programming Language](https://en.wikipedia.org/wiki/The_C_Programming_Language) - Kernighan & Ritchie
+- [C Programming: A Modern Approach](http://knking.com/books/c2/)
+
+### Outils
+- [GCC Documentation](https://gcc.gnu.org/onlinedocs/)
+- [Valgrind Documentation](https://valgrind.org/docs/)
+- [GDB Tutorial](https://www.gnu.org/software/gdb/documentation/)
+
+### Algorithmique
+- [VisuAlgo](https://visualgo.net/) - Visualisation d'algorithmes
+- [BigO Cheat Sheet](https://www.bigocheatsheet.com/)
+- [GeeksforGeeks - Data Structures](https://www.geeksforgeeks.org/data-structures/)
+
+### Programmation Système
+- [Beej's Guide to Unix IPC](https://beej.us/guide/bgipc/)
+- [Linux System Programming](https://www.oreilly.com/library/view/linux-system-programming/9781449341527/)
+
+---
+
+## 📈 Progression
+
+### Statut Actuel : 85% Complété
+
+**✅ Semaines Complètes**
+- [x] Semaine 1 - Fondamentaux C (100%)
+  - [x] Jour 01 - Bases (100%)
+  - [x] Jour 02 - Boucles et fonctions (100%)
+  - [x] Jour 03 - Récursion (100%)
+  - [x] Jour 04 - Pointeurs (100%)
+  - [x] Jour 05 - Makefile & Git (100%)
+  - [x] Jour 06 - Libft (100%)
+
+**🔄 Semaines En Cours**
+- [x] Semaine 2 - Structures de données (80%)
+  - [x] Jour 07 - Allocation dynamique (100%)
+  - [x] Jour 08 - Listes chaînées (100%)
+  - [ ] Jour 09 - Hash tables (60%)
+  - [ ] Jour 10 - Arbres binaires (50%)
+
+- [ ] Semaine 3 - Programmation système (60%)
+  - [ ] Jour 11 - fork/exec (70%)
+  - [ ] Jour 12 - Pipes et signaux (50%)
+  - [ ] Jour 13 - Mini-shell (60%)
+
+- [ ] Semaine 4 - Projets avancés (40%)
+  - [ ] Mini-grep (60%)
+  - [ ] Benchmarks (30%)
+
+**⏳ Prochaines Étapes**
+- Compléter les arbres binaires (BST)
+- Finaliser le mini-shell avec pipes
+- Ajouter tests unitaires automatisés
+- Benchmarks de performance détaillés
+
+---
+
+## 🔗 Connexions avec JavaScript
+
+Ce projet renforce mes compétences JavaScript en :
+
+### Algorithmes
+```c
+// C - Quick Sort
+void quick_sort(int *arr, int low, int high) {
+    if (low < high) {
+        int pi = partition(arr, low, high);
+        quick_sort(arr, low, pi - 1);
+        quick_sort(arr, pi + 1, high);
+    }
+}
+```
+
+```javascript
+// JavaScript - Quick Sort
+function quickSort(arr, low = 0, high = arr.length - 1) {
+    if (low < high) {
+        const pi = partition(arr, low, high);
+        quickSort(arr, low, pi - 1);
+        quickSort(arr, pi + 1, high);
+    }
+    return arr;
+}
+```
+
+### Structures de Données
+```c
+// C - Linked List Node
+typedef struct s_list {
+    int data;
+    struct s_list *next;
+} t_list;
+```
+
+```javascript
+// JavaScript - Linked List Node
+class Node {
+    constructor(data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+```
+
+### Patterns Communs
+- Two Pointers (inversion, palindrome)
+- Recursion (factorial, fibonacci)
+- Hash Tables (Map en JS)
+- Binary Search (sur Array.sort())
+
+---
+
+## 👤 Auteur
 
 **Manuel ADELE**
-📧 Email : manuel.adele@gmail.com
-🐙 GitHub : [@P4cm4n972](https://github.com/P4cm4n972)
-💼 LinkedIn : [Manuel ADELE](https://linkedin.com/in/manuel-adele)
-🌐 Portfolio : [manuel-adele.dev](https://manuel-adele.dev)
+- GitHub: [@P4cm4n972](https://github.com/P4cm4n972)
+- LinkedIn: [Manuel ADELE](https://linkedin.com/in/manuel-adele)
+- Email: manuel.adele@gmail.com
 
-**Disponibilité :** Immédiate pour missions freelance ou CDI
-**Mobilité :** France entière (remote ou présentiel)
-**TJM indicatif :** À discuter selon mission
+Software Engineer Full-Stack avec 6 ans d'expérience, renforçant ses compétences en programmation bas-niveau et algorithmique.
 
 ---
 
-## 📂 Accès au Code Source
+## 📄 License
 
-**Repository GitHub :** [github.com/p4cm4n972/piscine-C](https://github.com/p4cm4n972/piscine-C)
-
-**Structure du projet :**
-```
-piscine-C/
-├── Semaine1/          # Syntaxe & bases (27 fichiers) ✅
-├── Semaine2/          # Algorithmique (35 fichiers) ✅
-├── Semaine3/          # Mémoire & listes (12 fichiers) ⏳
-├── Semaine4/          # Projets avancés (en cours) 🔄
-├── README.md          # Ce dossier de compétences
-└── Documentation/     # 17 guides techniques
-```
-
-**Statistiques GitHub :**
-- 🌟 Stars : 12
-- 🔀 Forks : 3
-- 📝 Commits : 45+
-- 📅 Dernière mise à jour : Novembre 2024
+MIT © Manuel ADELE
 
 ---
 
-## 🚀 Prochaines Étapes de Formation
+## 🙏 Remerciements
 
-### Court terme (3 mois)
-- ✅ Finaliser Semaine 4 (projets avancés)
-- 🔄 Approfondir WebAssembly (C → WASM)
-- 🔄 Contribuer à projet open-source C/C++
-- 🔄 Certification : LeetCode Top 5% (algorithmes)
-
-### Moyen terme (6-12 mois)
-- 🎯 Formation C++ (orienté objet)
-- 🎯 Développement de module natif Node.js
-- 🎯 Projet perso : Game engine 2D en C + WebGL
-- 🎯 Certification : Google Cloud Professional (infra + performance)
-
-### Long terme (2 ans)
-- 🎯 Expertise Rust (alternative moderne à C)
-- 🎯 Contribution core Node.js / V8
-- 🎯 Technical Lead sur projet critique
-- 🎯 Speaker conférence (DevFest, DotJS)
+Ce projet de formation s'inspire de :
+- Piscine C de l'école 42
+- [The C Programming Language](https://en.wikipedia.org/wiki/The_C_Programming_Language) (K&R)
+- Ressources GeeksforGeeks et StackOverflow
+- Communauté C et algorithmique
 
 ---
 
-## 📄 Annexes
-
-### Références Techniques
-- [Documentation GCC](https://gcc.gnu.org/onlinedocs/)
-- [Valgrind Manual](https://valgrind.org/docs/manual/manual.html)
-- [C Programming Language (K&R)](https://en.wikipedia.org/wiki/The_C_Programming_Language)
-- [LeetCode Algorithms](https://leetcode.com/problemset/algorithms/)
-
-### Formations Connexes
-- ✅ **JavaScript Expert** (2017-2023, 6 ans pro)
-- ✅ **React/Node.js** (formation bootcamp 2017)
-- ✅ **Piscine C** (auto-formation 2024, 120h)
-- 🔄 **Algorithmes LeetCode** (top 15%, 150+ problèmes)
-
----
-
-> *"La maîtrise des fondamentaux algorithmiques et de la gestion mémoire en C
-> est un atout différenciant pour un développeur senior Full-Stack."*
-
-**Dernière mise à jour :** 9 Novembre 2024
-**Version du document :** 1.0
-**Format :** Dossier de compétences technique
-**Destinataire :** Recruteurs ESN, Technical Leads, Managers IT
-
----
-
-## ⭐ Résumé Exécutif (1 page)
-
-**Manuel ADELE** | Développeur Full-Stack | 6 ans d'expérience
-📧 manuel.adele@gmail.com | 🐙 [@P4cm4n972](https://github.com/P4cm4n972)
-
-### Profil
-Développeur Full-Stack JavaScript confirmé (React, Node.js) avec formation complémentaire en C/C++ pour renforcement algorithmique et performance. Expertise unique combinant développement web moderne et programmation bas-niveau.
-
-### Compétences Clés
-✅ **Algorithmique** : Tri O(n log n), recherche binaire, récursion
-✅ **Structures de données** : Listes chaînées, hash tables, arbres
-✅ **Gestion mémoire** : malloc/free, valgrind 0 leaks, optimisation
-✅ **Programmation système** : Unix, fork/exec, pipes, signals
-✅ **Qualité** : 0 warnings, tests unitaires, code reviews
-
-### Réalisations (Piscine C - 120h)
-- 🏆 70+ exercices algorithmiques résolus
-- 🏆 5 projets complets (Mini-shell, Libft, Grep, Guess Game)
-- 🏆 ~9000 lignes de code C sans memory leaks
-- 🏆 Maîtrise de GCC, GDB, Valgrind, Make, Git
-
-### Valeur Ajoutée pour ESN
-- **Performance** : Optimisation d'algorithmes critiques (O(n²) → O(n log n))
-- **Polyvalence** : Full-Stack + Bas-niveau (IoT, WASM, modules natifs)
-- **Qualité** : Rigueur C appliquée au JavaScript (0 bugs, 0 leaks)
-- **Leadership** : Expertise technique pour code reviews et architecture
-
-### Disponibilité
-Immédiate | Remote ou présentiel | France entière
-
----
-
-**Document généré avec ❤️ et ☕**
-**License :** MIT
-**Repository :** [github.com/p4cm4n972/piscine-C](https://github.com/p4cm4n972/piscine-C)
+**Dernière mise à jour** : Novembre 2024
+**Version** : 1.0
+**Statut** : En cours (85%)
