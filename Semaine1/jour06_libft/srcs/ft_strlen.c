@@ -2,10 +2,8 @@
 
 int	ft_strlen(char *str)
 {
-	int	len;
-
-	len = 0;
-	while (str[len])
-		len++;
-	return (len);
+	// TODO: Compter le nombre de caractères jusqu'au '\0'
+	// Indice: boucle while (str[len]) avec un compteur len
+	(void)str;
+	return (0);
 }

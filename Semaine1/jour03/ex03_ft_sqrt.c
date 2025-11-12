@@ -8,15 +8,13 @@
 
 int	ft_sqrt(int nb)
 {
-	int	i;
-
-	if (nb < 0)
-		return (0);
-	i = 0;
-	while (i * i < nb)
-		i++;
-	if (i * i == nb)
-		return (i);
+	// TODO: Implémenter la fonction
+	// - Si nb < 0, retourner 0
+	// - Chercher un entier i tel que i * i == nb
+	// - Si trouvé, retourner i
+	// - Sinon, retourner 0
+	// Indice: boucle while avec i qui s'incrémente
+	(void)nb;
 	return (0);
 }
 

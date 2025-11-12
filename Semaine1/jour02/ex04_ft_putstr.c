@@ -37,6 +37,11 @@
 
 #include <unistd.h>
 
+void	ft_putstr(char *str);
+
+int main(void){
+  ft_putstr("hello");
+}
 void	ft_putstr(char *str)
 {
 	while (*str)
@@ -44,11 +49,12 @@ void	ft_putstr(char *str)
 		write(1, str, 1);
 		str++;
 	}
+  write(1, " \n", 2);
 }
 
 /*
 ** EXPLICATION DU CODE :
-**
+**a
 ** while (*str)
 **   ↓
 **   Tant que le caractère pointé par str n'est pas '\0'

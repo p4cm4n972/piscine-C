@@ -10,17 +10,14 @@
 
 int	ft_iterative_power(int nb, int power)
 {
-	int	result;
-
-	if (power < 0)
-		return (0);
-	result = 1;
-	while (power > 0)
-	{
-		result *= nb;
-		power--;
-	}
-	return (result);
+	// TODO: Implémenter la fonction
+	// - Si power < 0, retourner 0
+	// - Si power == 0, retourner 1 (convention: 0^0 = 1)
+	// - Sinon, multiplier nb par lui-même power fois
+	// Indice: utiliser une boucle while et une variable result
+	(void)nb;
+	(void)power;
+	return (0);
 }
 
 /*

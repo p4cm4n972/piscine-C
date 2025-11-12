@@ -9,18 +9,14 @@
 
 int	ft_is_prime(int nb)
 {
-	int	i;
-
-	if (nb < 2)
-		return (0);
-	i = 2;
-	while (i * i <= nb)
-	{
-		if (nb % i == 0)
-			return (0);
-		i++;
-	}
-	return (1);
+	// TODO: Implémenter la fonction
+	// - Si nb < 2, retourner 0 (pas premier)
+	// - Tester si nb est divisible par un nombre de 2 à √nb
+	// - Si divisible, retourner 0
+	// - Sinon, retourner 1
+	// Indice: boucle while avec i de 2 à √nb, vérifier nb % i
+	(void)nb;
+	return (0);
 }
 
 /*

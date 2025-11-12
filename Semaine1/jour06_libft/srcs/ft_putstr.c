@@ -3,12 +3,7 @@
 
 void	ft_putstr(char *str)
 {
-	int	i;
-
-	i = 0;
-	while (str[i])
-	{
-		ft_putchar(str[i]);
-		i++;
-	}
+	// TODO: Parcourir la chaîne et afficher chaque caractère avec ft_putchar
+	// Indice: boucle while (str[i])
+	(void)str;
 }

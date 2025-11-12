@@ -2,9 +2,8 @@
 
 void	ft_swap(int *a, int *b)
 {
-	int	temp;
-
-	temp = *a;
-	*a = *b;
-	*b = temp;
+	// TODO: Échanger les valeurs pointées par a et b
+	// Indice: utiliser une variable temporaire temp
+	(void)a;
+	(void)b;
 }
