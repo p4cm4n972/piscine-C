@@ -1,15 +1,31 @@
-CC=gcc
-CFLAGS=-Wall -Wextra -Werror
-SRC=$(wildcard *.c)
-OBJ=$(SRC:.c=.o)
-NAME=libft.a
+NAME = libft.a
+CC = gcc
+CFLAGS = -Wall -Wextra -Werror
 
-all:$(NAME)
-$(NAME):$(OBJ)
-	ar rc $(NAME) $(OBJ)
-	ranlib $(NAME)
+SRCS = srcs/ft_putchar.c \
+       srcs/ft_putstr.c \
+       srcs/ft_strlen.c \
+       srcs/ft_strcmp.c \
+       srcs/ft_strcpy.c \
+       srcs/ft_swap.c \
+       srcs/ft_sort_int_tab.c
+
+OBJS = $(SRCS:.c=.o)
+
+all: $(NAME)
+
+$(NAME): $(OBJS)
+	ar rcs $(NAME) $(OBJS)
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
 clean:
-	rm -f $(OBJ)
+	rm -f $(OBJS)
+
 fclean: clean
 	rm -f $(NAME)
+
 re: fclean all
+
+.PHONY: all clean fclean re

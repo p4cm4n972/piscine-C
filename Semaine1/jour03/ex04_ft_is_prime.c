@@ -39,3 +39,19 @@ int	ft_is_prime(int nb)
 ** Question interview : "Count Primes" (LeetCode #204)
 ** → Sieve of Eratosthenes O(n log log n)
 */
+
+#include <stdio.h>
+
+int	main(void)
+{
+	printf("=== Test ft_is_prime ===\n");
+	printf("is_prime(2) = %d (expected: 1)\n", ft_is_prime(2));
+	printf("is_prime(3) = %d (expected: 1)\n", ft_is_prime(3));
+	printf("is_prime(4) = %d (expected: 0)\n", ft_is_prime(4));
+	printf("is_prime(7) = %d (expected: 1)\n", ft_is_prime(7));
+	printf("is_prime(8) = %d (expected: 0)\n", ft_is_prime(8));
+	printf("is_prime(1) = %d (expected: 0)\n", ft_is_prime(1));
+	printf("is_prime(0) = %d (expected: 0)\n", ft_is_prime(0));
+	printf("is_prime(97) = %d (expected: 1)\n", ft_is_prime(97));
+	return (0);
+}

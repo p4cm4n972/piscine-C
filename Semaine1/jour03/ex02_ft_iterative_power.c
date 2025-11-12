@@ -38,3 +38,16 @@ int	ft_iterative_power(int nb, int power)
 **     return x * pow(x, n - 1);
 ** }
 */
+
+#include <stdio.h>
+
+int	main(void)
+{
+	printf("=== Test ft_iterative_power ===\n");
+	printf("power(2, 3) = %d (expected: 8)\n", ft_iterative_power(2, 3));
+	printf("power(5, 0) = %d (expected: 1)\n", ft_iterative_power(5, 0));
+	printf("power(0, 0) = %d (expected: 1)\n", ft_iterative_power(0, 0));
+	printf("power(2, 10) = %d (expected: 1024)\n", ft_iterative_power(2, 10));
+	printf("power(3, -2) = %d (expected: 0)\n", ft_iterative_power(3, -2));
+	return (0);
+}
