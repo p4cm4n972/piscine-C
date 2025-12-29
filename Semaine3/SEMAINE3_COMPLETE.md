@@ -4,7 +4,7 @@
 
 **Semaine 3 : Mémoire & Pointeurs avancés**
 
-Progression : **████████░░░░ 70% complété**
+Progression : **████████████ 100% COMPLÉTÉ**
 
 ---
 
@@ -15,7 +15,7 @@ Progression : **████████░░░░ 70% complété**
 2. ✅ **SEMAINE3_COMPLETE.md** - Ce fichier récapitulatif
 
 ### JOUR 13 : Allocation dynamique (malloc/free)
-**Status : 🟢 Exercices principaux créés**
+**Status : ✅ 100% Complet**
 
 | Fichier | Description | Status |
 |---------|-------------|--------|
@@ -23,80 +23,87 @@ Progression : **████████░░░░ 70% complété**
 | ft_range.c | Créer un tableau d'entiers dynamique | ✅ Créé |
 | ft_concat.c | Concaténer deux chaînes | ✅ Créé |
 | challenge_ft_split_whitespaces.c | Split sur espaces/tabs | ✅ Créé |
-| ft_malloc_basics.c | Exemples de base malloc | 📋 À créer |
-| challenge_ft_realloc_safe.c | Wrapper sécurisé realloc | 📋 À créer |
+| ft_malloc_basics.c | Exemples de base malloc | ✅ Créé |
+| challenge_ft_realloc_safe.c | Wrapper sécurisé realloc | ✅ Créé |
 
-**Total jour13 : 4/6 fichiers (67%)**
+**Total jour13 : 6/6 fichiers (100%)**
 
 ### JOUR 14 : Listes chaînées
-**Status : 🟡 Fichiers-clés créés**
+**Status : ✅ 100% Complet**
 
 | Fichier | Description | Status |
 |---------|-------------|--------|
 | ft_list.h | Header avec tous les prototypes | ✅ Créé |
 | ft_list_create.c | Créer un maillon | ✅ Créé |
 | challenge_ft_list_reverse.c | Inverser une liste | ✅ Créé |
-| ft_list_push_front.c | Ajouter en tête | 📋 À créer |
-| ft_list_push_back.c | Ajouter en queue | 📋 À créer |
-| ft_list_size.c | Compter les éléments | 📋 À créer |
-| ft_list_at.c | Élément à l'index n | 📋 À créer |
-| challenge_ft_list_sort.c | Trier une liste | 📋 À créer |
-| challenge_ft_list_remove_if.c | Supprimer selon condition | 📋 À créer |
+| ft_list_push_front.c | Ajouter en tête | ✅ Créé |
+| ft_list_push_back.c | Ajouter en queue | ✅ Créé |
+| ft_list_size.c | Compter les éléments | ✅ Créé |
+| ft_list_at.c | Élément à l'index n | ✅ Créé |
+| challenge_ft_list_sort.c | Trier une liste | ✅ Créé |
+| challenge_ft_list_remove_if.c | Supprimer selon condition | ✅ Créé |
 
-**Total jour14 : 3/9 fichiers (33%)**
+**Total jour14 : 9/9 fichiers (100%)**
 
 ### JOUR 15 : Structures et types personnalisés
-**Status : 🔴 À créer**
+**Status : ✅ 100% Complet**
 
-Exercices prévus :
-- ft_point.c - Structure Point (x, y)
-- ft_stock_str.c - Structure pour strings
-- ft_book.c - Gestion de livres
-- ft_student.c - Gestion d'étudiants
-- challenge_ft_btree.c - Arbre binaire
-- challenge_ft_graph.c - Graphe simple
+| Fichier | Description | Status |
+|---------|-------------|--------|
+| ft_point.c | Structure Point (x, y) | ✅ Créé |
+| ft_stock_str.c | Structure pour strings | ✅ Créé |
+| ft_book.c | Gestion de livres | ✅ Créé |
+| ft_student.c | Gestion d'étudiants | ✅ Créé |
+| challenge_ft_btree.c | Arbre binaire | ✅ Créé |
+| challenge_ft_graph.c | Graphe simple | ✅ Créé |
 
-**Total jour15 : 0/6 fichiers (0%)**
+**Total jour15 : 6/6 fichiers (100%)**
 
 ### JOUR 16 : Split et parsing avancé
-**Status : 🔴 À créer**
+**Status : ✅ 100% Complet**
 
-Exercices prévus :
-- ft_split.c - Split générique
-- ft_split_multi.c - Plusieurs séparateurs
-- ft_split_quotes.c - Gérer guillemets
-- ft_parse_args.c - Parser arguments
-- challenge_ft_csv_parser.c - Parser CSV
-- challenge_ft_json_simple.c - Parser JSON simple
+| Fichier | Description | Status |
+|---------|-------------|--------|
+| ft_split.c | Split générique | ✅ Créé |
+| ft_split_multi.c | Plusieurs séparateurs | ✅ Créé |
+| ft_split_quotes.c | Gérer guillemets | ✅ Créé |
+| ft_parse_args.c | Parser arguments | ✅ Créé |
+| challenge_ft_csv_parser.c | Parser CSV | ✅ Créé |
+| challenge_ft_json_simple.c | Parser JSON simple | ✅ Créé |
 
-**Total jour16 : 0/6 fichiers (0%)**
+**Total jour16 : 6/6 fichiers (100%)**
 
 ### JOUR 17 : Mini-shell (projet)
-**Status : 🟢 README créé**
+**Status : ✅ 100% Complet**
 
 | Fichier | Description | Status |
 |---------|-------------|--------|
 | README.md | Documentation complète du projet | ✅ Créé |
-| Makefile | Compilation | 📋 À créer |
-| minishell.h | Header principal | 📋 À créer |
-| main.c | Point d'entrée | 📋 À créer |
-| parser.c | Parsing de commandes | 📋 À créer |
-| executor.c | Exécution fork/execve | 📋 À créer |
-| builtins.c | cd, exit, env, pwd | 📋 À créer |
-| utils.c | Fonctions utilitaires | 📋 À créer |
-| signals.c | Gestion Ctrl+C | 📋 À créer |
+| Makefile | Compilation | ✅ Créé |
+| minishell.h | Header principal | ✅ Créé |
+| main.c | Point d'entrée | ✅ Créé |
+| parser.c | Parsing de commandes | ✅ Créé |
+| executor.c | Exécution fork/execve | ✅ Créé |
+| builtins.c | cd, exit, env, pwd | ✅ Créé |
+| utils.c | Fonctions utilitaires | ✅ Créé |
+| signals.c | Gestion Ctrl+C | ✅ Créé |
 
-**Total jour17 : 1/9 fichiers (11%)**
+**Total jour17 : 9/9 fichiers (100%)**
 
 ### JOUR 18 : Projet final mémoire
-**Status : 🔴 À créer**
+**Status : ✅ 100% Complet**
 
-Options de projet :
-1. Memory Allocator personnalisé
-2. Database en mémoire (hash table)
-3. Text Editor simple (buffer de lignes)
+Projet implémenté : **Memory Allocator personnalisé**
 
-**Total jour18 : 0 fichiers**
+| Fichier | Description | Status |
+|---------|-------------|--------|
+| README.md | Documentation complète | ✅ Créé |
+| memory_manager.h | Header du manager | ✅ Créé |
+| memory_manager.c | Implémentation | ✅ Créé |
+| main.c | Tests complets | ✅ Créé |
+| Makefile | Compilation | ✅ Créé |
+
+**Total jour18 : 5/5 fichiers (100%)**
 
 ---
 
@@ -104,21 +111,22 @@ Options de projet :
 
 ### Fichiers créés par jour
 ```
-Jour 13 : ████████████████░░░░ 67% (4/6 fichiers)
-Jour 14 : ████████░░░░░░░░░░░░ 33% (3/9 fichiers)
-Jour 15 : ░░░░░░░░░░░░░░░░░░░░ 0%  (0/6 fichiers)
-Jour 16 : ░░░░░░░░░░░░░░░░░░░░ 0%  (0/6 fichiers)
-Jour 17 : ███░░░░░░░░░░░░░░░░░ 11% (1/9 fichiers)
-Jour 18 : ░░░░░░░░░░░░░░░░░░░░ 0%  (0 fichiers)
+Jour 13 : ████████████████████ 100% (6/6 fichiers)
+Jour 14 : ████████████████████ 100% (9/9 fichiers)
+Jour 15 : ████████████████████ 100% (6/6 fichiers)
+Jour 16 : ████████████████████ 100% (6/6 fichiers)
+Jour 17 : ████████████████████ 100% (9/9 fichiers)
+Jour 18 : ████████████████████ 100% (5/5 fichiers)
 
-TOTAL SEMAINE 3 : 8/36+ fichiers ≈ 22%
+TOTAL SEMAINE 3 : 41/41 fichiers = 100%
 ```
 
 ### Répartition
-- **Documentation** : 2 fichiers ✅
-- **Exercices créés** : 8 fichiers
-- **Exercices à créer** : ~30 fichiers
-- **Total prévu** : ~40 fichiers
+- **Documentation** : 3 fichiers (READMEs) ✅
+- **Exercices C** : 36 fichiers (.c) ✅
+- **Headers** : 2 fichiers (.h) ✅
+- **Makefiles** : 3 fichiers ✅
+- **Total** : 44 fichiers
 
 ---
 
@@ -343,11 +351,11 @@ cd /home/itmade/Piscine/C/Semaine3/jour14_listes_chainees
 
 ---
 
-**Progression globale Piscine C : █████████░░░ 75%**
+**Progression globale Piscine C : ███████████░ 95%**
 
 - Semaine 1 : ✅ 100%
 - Semaine 2 : ✅ 100%
-- Semaine 3 : 🟡 22% (en cours)
-- Semaine 4 : 📋 20% (structure prête)
+- Semaine 3 : ✅ 100% **COMPLET !**
+- Semaine 4 : 📋 20% (documentation prête)
 
-**Continue ! Tu progresses bien ! 💪**
+**Félicitations ! Semaine 3 terminée avec succès ! 🎉**
