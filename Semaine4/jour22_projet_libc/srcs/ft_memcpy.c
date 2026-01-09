@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_find_int.c                                      :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: piscine                                     +#+  +:+       +#+       */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,36 +10,28 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** ft_find_int - Recherche linéaire dans un tableau d'entiers
-** @tab: tableau d'entiers
-** @size: taille du tableau
-** @n: valeur à rechercher
-** Return: index de l'élément si trouvé, -1 sinon
-**
-** Algorithme: Recherche linéaire (séquentielle)
-** - Complexité: O(n) dans tous les cas
-** - Aucune précondition (tableau non trié accepté)
-**
-** Avantages:
-** - Simple à implémenter
-** - Fonctionne sur tableaux non triés
-** - Efficace pour petits tableaux
-**
-** Inconvénients:
-** - Lent pour grands tableaux (O(n))
-** - Pas optimal si tableau trié (utiliser binary search)
-*/
-int	ft_find_int(int *tab, int size, int n)
-{
-	int	i;
+#include "libft.h"
 
-	i = 0;
-	while (i < size)
-	{
-		if (tab[i] == n)
-			return (i);
-		i++;
-	}
-	return (-1);
+/*
+** ft_memcpy - Copie n octets de src vers dst
+** @dst: zone mémoire destination
+** @src: zone mémoire source
+** @n: nombre d'octets à copier
+** Return: pointeur vers dst
+**
+** ATTENTION: Les zones ne doivent PAS se chevaucher
+** Utiliser ft_memmove si chevauchement possible
+*/
+void	*ft_memcpy(void *dst, const void *src, size_t n)
+{
+	unsigned char		*d;
+	const unsigned char	*s;
+
+	if (!dst && !src)
+		return (NULL);
+	d = (unsigned char *)dst;
+	s = (const unsigned char *)src;
+	while (n--)
+		*d++ = *s++;
+	return (dst);
 }

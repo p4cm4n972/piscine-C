@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_find_int.c                                      :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: piscine                                     +#+  +:+       +#+       */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,36 +10,25 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 /*
-** ft_find_int - Recherche linéaire dans un tableau d'entiers
-** @tab: tableau d'entiers
-** @size: taille du tableau
-** @n: valeur à rechercher
-** Return: index de l'élément si trouvé, -1 sinon
-**
-** Algorithme: Recherche linéaire (séquentielle)
-** - Complexité: O(n) dans tous les cas
-** - Aucune précondition (tableau non trié accepté)
-**
-** Avantages:
-** - Simple à implémenter
-** - Fonctionne sur tableaux non triés
-** - Efficace pour petits tableaux
-**
-** Inconvénients:
-** - Lent pour grands tableaux (O(n))
-** - Pas optimal si tableau trié (utiliser binary search)
+** ft_strncmp - Compare au plus n caractères de deux chaînes
+** @s1: première chaîne
+** @s2: deuxième chaîne
+** @n: nombre maximum de caractères à comparer
+** Return: différence des premiers caractères différents, 0 si égales
 */
-int	ft_find_int(int *tab, int size, int n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
-	while (i < size)
+	while (i < n && (s1[i] || s2[i]))
 	{
-		if (tab[i] == n)
-			return (i);
+		if ((unsigned char)s1[i] != (unsigned char)s2[i])
+			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 		i++;
 	}
-	return (-1);
+	return (0);
 }

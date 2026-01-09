@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_find_int.c                                      :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: piscine                                     +#+  +:+       +#+       */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,36 +10,39 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** ft_find_int - Recherche linéaire dans un tableau d'entiers
-** @tab: tableau d'entiers
-** @size: taille du tableau
-** @n: valeur à rechercher
-** Return: index de l'élément si trouvé, -1 sinon
-**
-** Algorithme: Recherche linéaire (séquentielle)
-** - Complexité: O(n) dans tous les cas
-** - Aucune précondition (tableau non trié accepté)
-**
-** Avantages:
-** - Simple à implémenter
-** - Fonctionne sur tableaux non triés
-** - Efficace pour petits tableaux
-**
-** Inconvénients:
-** - Lent pour grands tableaux (O(n))
-** - Pas optimal si tableau trié (utiliser binary search)
-*/
-int	ft_find_int(int *tab, int size, int n)
-{
-	int	i;
+#include "libft.h"
 
-	i = 0;
-	while (i < size)
+/*
+** ft_atoi - Convertit une chaîne en entier
+** @str: chaîne à convertir
+** Return: valeur entière
+**
+** Comportement:
+** 1. Ignore les espaces initiaux (isspace)
+** 2. Gère un signe optionnel (+ ou -)
+** 3. Convertit les chiffres jusqu'au premier non-chiffre
+**
+** Note: Ne gère pas les dépassements (comportement indéfini comme atoi)
+*/
+int	ft_atoi(const char *str)
+{
+	int	result;
+	int	sign;
+
+	result = 0;
+	sign = 1;
+	while (*str == ' ' || (*str >= 9 && *str <= 13))
+		str++;
+	if (*str == '-' || *str == '+')
 	{
-		if (tab[i] == n)
-			return (i);
-		i++;
+		if (*str == '-')
+			sign = -1;
+		str++;
 	}
-	return (-1);
+	while (*str >= '0' && *str <= '9')
+	{
+		result = result * 10 + (*str - '0');
+		str++;
+	}
+	return (result * sign);
 }

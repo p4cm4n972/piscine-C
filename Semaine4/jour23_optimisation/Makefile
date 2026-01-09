@@ -11,35 +11,27 @@
 # **************************************************************************** #
 
 CC		= gcc
-CFLAGS	= -Wall -Wextra -Werror
+CFLAGS	= -Wall -Wextra -Werror -O2
 
-NAME		= guess_game
-NAME_COMB	= numbers_game
+NAME	= benchmark
 
-SRC			= guess_game.c
-SRC_COMB	= numbers_game.c
+SRCS	= benchmark.c
+OBJS	= $(SRCS:.c=.o)
 
-all: $(NAME) $(NAME_COMB)
+all: $(NAME)
 
-$(NAME): $(SRC)
-	$(CC) $(CFLAGS) $(SRC) -o $(NAME)
-
-$(NAME_COMB): $(SRC_COMB)
-	$(CC) $(CFLAGS) $(SRC_COMB) -o $(NAME_COMB)
+$(NAME): $(OBJS)
+	$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
 
 clean:
-	rm -f *.o
+	rm -f $(OBJS)
 
 fclean: clean
-	rm -f $(NAME) $(NAME_COMB)
+	rm -f $(NAME)
 
 re: fclean all
 
 test: all
-	@echo "=== Test numbers_game ==="
-	@./$(NAME_COMB)
-	@echo ""
-	@echo "=== Test guess_game ==="
-	@echo "Lancez ./$(NAME) pour tester interactivement"
+	./$(NAME)
 
 .PHONY: all clean fclean re test

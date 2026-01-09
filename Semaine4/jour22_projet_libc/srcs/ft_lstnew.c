@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_find_int.c                                      :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: piscine                                     +#+  +:+       +#+       */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,36 +10,21 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** ft_find_int - Recherche linéaire dans un tableau d'entiers
-** @tab: tableau d'entiers
-** @size: taille du tableau
-** @n: valeur à rechercher
-** Return: index de l'élément si trouvé, -1 sinon
-**
-** Algorithme: Recherche linéaire (séquentielle)
-** - Complexité: O(n) dans tous les cas
-** - Aucune précondition (tableau non trié accepté)
-**
-** Avantages:
-** - Simple à implémenter
-** - Fonctionne sur tableaux non triés
-** - Efficace pour petits tableaux
-**
-** Inconvénients:
-** - Lent pour grands tableaux (O(n))
-** - Pas optimal si tableau trié (utiliser binary search)
-*/
-int	ft_find_int(int *tab, int size, int n)
-{
-	int	i;
+#include "libft.h"
 
-	i = 0;
-	while (i < size)
-	{
-		if (tab[i] == n)
-			return (i);
-		i++;
-	}
-	return (-1);
+/*
+** ft_lstnew - Crée un nouveau maillon de liste
+** @content: contenu du maillon (void* pour généricité)
+** Return: nouveau maillon, NULL si échec malloc
+*/
+t_list	*ft_lstnew(void *content)
+{
+	t_list	*new;
+
+	new = (t_list *)malloc(sizeof(t_list));
+	if (!new)
+		return (NULL);
+	new->content = content;
+	new->next = NULL;
+	return (new);
 }

@@ -13,33 +13,38 @@
 CC		= gcc
 CFLAGS	= -Wall -Wextra -Werror
 
-NAME		= guess_game
-NAME_COMB	= numbers_game
+NAME	= mini_editor
 
-SRC			= guess_game.c
-SRC_COMB	= numbers_game.c
+SRCS	= main.c mini_editor.c
+OBJS	= $(SRCS:.c=.o)
+HEADER	= mini_editor.h
 
-all: $(NAME) $(NAME_COMB)
+all: $(NAME)
 
-$(NAME): $(SRC)
-	$(CC) $(CFLAGS) $(SRC) -o $(NAME)
+$(NAME): $(OBJS)
+	$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
 
-$(NAME_COMB): $(SRC_COMB)
-	$(CC) $(CFLAGS) $(SRC_COMB) -o $(NAME_COMB)
+%.o: %.c $(HEADER)
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f *.o
+	rm -f $(OBJS)
 
 fclean: clean
-	rm -f $(NAME) $(NAME_COMB)
+	rm -f $(NAME) test.txt
 
 re: fclean all
 
 test: all
-	@echo "=== Test numbers_game ==="
-	@./$(NAME_COMB)
+	@echo "=== Test du Mini Editor ==="
+	@echo "Créons un fichier de test..."
+	@echo -e "p\na Hello World\na This is line 2\na Final line\np\nw test.txt\nq" | ./$(NAME)
 	@echo ""
-	@echo "=== Test guess_game ==="
-	@echo "Lancez ./$(NAME) pour tester interactivement"
+	@echo "=== Contenu de test.txt ==="
+	@cat test.txt 2>/dev/null || echo "(fichier non créé)"
 
-.PHONY: all clean fclean re test
+demo: all
+	@echo "Lancez: ./$(NAME) [fichier]"
+	@echo "Puis tapez 'h' pour l'aide"
+
+.PHONY: all clean fclean re test demo

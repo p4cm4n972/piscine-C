@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_find_int.c                                      :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: piscine                                     +#+  +:+       +#+       */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,36 +10,30 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** ft_find_int - Recherche linéaire dans un tableau d'entiers
-** @tab: tableau d'entiers
-** @size: taille du tableau
-** @n: valeur à rechercher
-** Return: index de l'élément si trouvé, -1 sinon
-**
-** Algorithme: Recherche linéaire (séquentielle)
-** - Complexité: O(n) dans tous les cas
-** - Aucune précondition (tableau non trié accepté)
-**
-** Avantages:
-** - Simple à implémenter
-** - Fonctionne sur tableaux non triés
-** - Efficace pour petits tableaux
-**
-** Inconvénients:
-** - Lent pour grands tableaux (O(n))
-** - Pas optimal si tableau trié (utiliser binary search)
-*/
-int	ft_find_int(int *tab, int size, int n)
-{
-	int	i;
+#include "libft.h"
 
-	i = 0;
-	while (i < size)
-	{
-		if (tab[i] == n)
-			return (i);
-		i++;
-	}
-	return (-1);
+/*
+** ft_calloc - Alloue et initialise à zéro
+** @count: nombre d'éléments
+** @size: taille de chaque élément
+** Return: pointeur vers la mémoire allouée, NULL si échec
+**
+** Équivalent à: ptr = malloc(count * size); bzero(ptr, count * size);
+** Vérifie le dépassement de multiplication
+*/
+void	*ft_calloc(size_t count, size_t size)
+{
+	void	*ptr;
+	size_t	total;
+
+	if (count == 0 || size == 0)
+		return (malloc(0));
+	total = count * size;
+	if (total / count != size)
+		return (NULL);
+	ptr = malloc(total);
+	if (!ptr)
+		return (NULL);
+	ft_bzero(ptr, total);
+	return (ptr);
 }

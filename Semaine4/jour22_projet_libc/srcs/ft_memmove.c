@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_find_int.c                                      :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: piscine                                     +#+  +:+       +#+       */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,36 +10,39 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** ft_find_int - Recherche linéaire dans un tableau d'entiers
-** @tab: tableau d'entiers
-** @size: taille du tableau
-** @n: valeur à rechercher
-** Return: index de l'élément si trouvé, -1 sinon
-**
-** Algorithme: Recherche linéaire (séquentielle)
-** - Complexité: O(n) dans tous les cas
-** - Aucune précondition (tableau non trié accepté)
-**
-** Avantages:
-** - Simple à implémenter
-** - Fonctionne sur tableaux non triés
-** - Efficace pour petits tableaux
-**
-** Inconvénients:
-** - Lent pour grands tableaux (O(n))
-** - Pas optimal si tableau trié (utiliser binary search)
-*/
-int	ft_find_int(int *tab, int size, int n)
-{
-	int	i;
+#include "libft.h"
 
-	i = 0;
-	while (i < size)
+/*
+** ft_memmove - Copie n octets (gère le chevauchement)
+** @dst: zone destination
+** @src: zone source
+** @len: nombre d'octets à copier
+** Return: pointeur vers dst
+**
+** Gestion du chevauchement:
+** - Si dst < src: copie du début vers la fin (normal)
+** - Si dst > src: copie de la fin vers le début (évite écrasement)
+*/
+void	*ft_memmove(void *dst, const void *src, size_t len)
+{
+	unsigned char		*d;
+	const unsigned char	*s;
+
+	if (!dst && !src)
+		return (NULL);
+	d = (unsigned char *)dst;
+	s = (const unsigned char *)src;
+	if (d < s)
 	{
-		if (tab[i] == n)
-			return (i);
-		i++;
+		while (len--)
+			*d++ = *s++;
 	}
-	return (-1);
+	else
+	{
+		d += len;
+		s += len;
+		while (len--)
+			*--d = *--s;
+	}
+	return (dst);
 }

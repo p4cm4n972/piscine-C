@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_find_int.c                                      :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: piscine                                     +#+  +:+       +#+       */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,36 +10,26 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** ft_find_int - Recherche linéaire dans un tableau d'entiers
-** @tab: tableau d'entiers
-** @size: taille du tableau
-** @n: valeur à rechercher
-** Return: index de l'élément si trouvé, -1 sinon
-**
-** Algorithme: Recherche linéaire (séquentielle)
-** - Complexité: O(n) dans tous les cas
-** - Aucune précondition (tableau non trié accepté)
-**
-** Avantages:
-** - Simple à implémenter
-** - Fonctionne sur tableaux non triés
-** - Efficace pour petits tableaux
-**
-** Inconvénients:
-** - Lent pour grands tableaux (O(n))
-** - Pas optimal si tableau trié (utiliser binary search)
-*/
-int	ft_find_int(int *tab, int size, int n)
-{
-	int	i;
+#include "libft.h"
 
-	i = 0;
-	while (i < size)
+/*
+** ft_strrchr - Localise la dernière occurrence de c dans s
+** @s: chaîne à parcourir
+** @c: caractère à trouver
+** Return: pointeur vers la dernière occurrence, NULL si non trouvé
+*/
+char	*ft_strrchr(const char *s, int c)
+{
+	const char	*last;
+
+	last = NULL;
+	while (*s)
 	{
-		if (tab[i] == n)
-			return (i);
-		i++;
+		if (*s == (char)c)
+			last = s;
+		s++;
 	}
-	return (-1);
+	if ((char)c == '\0')
+		return ((char *)s);
+	return ((char *)last);
 }

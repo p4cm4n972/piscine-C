@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_find_int.c                                      :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: piscine                                     +#+  +:+       +#+       */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,36 +10,53 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** ft_find_int - Recherche linéaire dans un tableau d'entiers
-** @tab: tableau d'entiers
-** @size: taille du tableau
-** @n: valeur à rechercher
-** Return: index de l'élément si trouvé, -1 sinon
-**
-** Algorithme: Recherche linéaire (séquentielle)
-** - Complexité: O(n) dans tous les cas
-** - Aucune précondition (tableau non trié accepté)
-**
-** Avantages:
-** - Simple à implémenter
-** - Fonctionne sur tableaux non triés
-** - Efficace pour petits tableaux
-**
-** Inconvénients:
-** - Lent pour grands tableaux (O(n))
-** - Pas optimal si tableau trié (utiliser binary search)
-*/
-int	ft_find_int(int *tab, int size, int n)
-{
-	int	i;
+#include "libft.h"
 
-	i = 0;
-	while (i < size)
+static int	get_num_len(int n)
+{
+	int	len;
+
+	len = 0;
+	if (n <= 0)
+		len = 1;
+	while (n != 0)
 	{
-		if (tab[i] == n)
-			return (i);
-		i++;
+		n /= 10;
+		len++;
 	}
-	return (-1);
+	return (len);
+}
+
+/*
+** ft_itoa - Convertit un entier en chaîne
+** @n: entier à convertir
+** Return: chaîne représentant n, NULL si échec
+**
+** Gère INT_MIN (-2147483648) correctement
+*/
+char	*ft_itoa(int n)
+{
+	char	*str;
+	int		len;
+	long	num;
+
+	len = get_num_len(n);
+	str = (char *)malloc(sizeof(char) * (len + 1));
+	if (!str)
+		return (NULL);
+	str[len] = '\0';
+	num = n;
+	if (num < 0)
+	{
+		str[0] = '-';
+		num = -num;
+	}
+	if (num == 0)
+		str[0] = '0';
+	while (num > 0)
+	{
+		str[--len] = '0' + (num % 10);
+		num /= 10;
+	}
+	return (str);
 }

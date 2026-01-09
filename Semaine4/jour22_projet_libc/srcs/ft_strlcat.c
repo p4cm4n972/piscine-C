@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_find_int.c                                      :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: piscine                                     +#+  +:+       +#+       */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,36 +10,35 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** ft_find_int - Recherche linéaire dans un tableau d'entiers
-** @tab: tableau d'entiers
-** @size: taille du tableau
-** @n: valeur à rechercher
-** Return: index de l'élément si trouvé, -1 sinon
-**
-** Algorithme: Recherche linéaire (séquentielle)
-** - Complexité: O(n) dans tous les cas
-** - Aucune précondition (tableau non trié accepté)
-**
-** Avantages:
-** - Simple à implémenter
-** - Fonctionne sur tableaux non triés
-** - Efficace pour petits tableaux
-**
-** Inconvénients:
-** - Lent pour grands tableaux (O(n))
-** - Pas optimal si tableau trié (utiliser binary search)
-*/
-int	ft_find_int(int *tab, int size, int n)
-{
-	int	i;
+#include "libft.h"
 
+/*
+** ft_strlcat - Concatène avec garantie de null-termination
+** @dst: buffer destination (doit contenir une chaîne valide)
+** @src: chaîne à concaténer
+** @dstsize: taille totale du buffer
+** Return: longueur de la chaîne qui aurait été créée si dstsize était infini
+**
+** Note: Si dstsize <= strlen(dst), retourne dstsize + strlen(src)
+*/
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
+{
+	size_t	dst_len;
+	size_t	src_len;
+	size_t	i;
+
+	src_len = ft_strlen(src);
+	dst_len = 0;
+	while (dst_len < dstsize && dst[dst_len])
+		dst_len++;
+	if (dst_len >= dstsize)
+		return (dstsize + src_len);
 	i = 0;
-	while (i < size)
+	while (src[i] && (dst_len + i) < dstsize - 1)
 	{
-		if (tab[i] == n)
-			return (i);
+		dst[dst_len + i] = src[i];
 		i++;
 	}
-	return (-1);
+	dst[dst_len + i] = '\0';
+	return (dst_len + src_len);
 }

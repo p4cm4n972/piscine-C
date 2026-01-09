@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_find_int.c                                      :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: piscine                                     +#+  +:+       +#+       */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,36 +10,37 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** ft_find_int - Recherche linéaire dans un tableau d'entiers
-** @tab: tableau d'entiers
-** @size: taille du tableau
-** @n: valeur à rechercher
-** Return: index de l'élément si trouvé, -1 sinon
-**
-** Algorithme: Recherche linéaire (séquentielle)
-** - Complexité: O(n) dans tous les cas
-** - Aucune précondition (tableau non trié accepté)
-**
-** Avantages:
-** - Simple à implémenter
-** - Fonctionne sur tableaux non triés
-** - Efficace pour petits tableaux
-**
-** Inconvénients:
-** - Lent pour grands tableaux (O(n))
-** - Pas optimal si tableau trié (utiliser binary search)
-*/
-int	ft_find_int(int *tab, int size, int n)
-{
-	int	i;
+#include "libft.h"
 
-	i = 0;
-	while (i < size)
+static int	is_in_set(char c, char const *set)
+{
+	while (*set)
 	{
-		if (tab[i] == n)
-			return (i);
-		i++;
+		if (c == *set)
+			return (1);
+		set++;
 	}
-	return (-1);
+	return (0);
+}
+
+/*
+** ft_strtrim - Supprime les caractères de set au début et à la fin de s1
+** @s1: chaîne à trimmer
+** @set: ensemble de caractères à supprimer
+** Return: nouvelle chaîne trimmée, NULL si échec
+*/
+char	*ft_strtrim(char const *s1, char const *set)
+{
+	size_t	start;
+	size_t	end;
+
+	if (!s1 || !set)
+		return (NULL);
+	start = 0;
+	while (s1[start] && is_in_set(s1[start], set))
+		start++;
+	end = ft_strlen(s1);
+	while (end > start && is_in_set(s1[end - 1], set))
+		end--;
+	return (ft_substr(s1, start, end - start));
 }

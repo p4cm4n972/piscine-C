@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_find_int.c                                      :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: piscine                                     +#+  +:+       +#+       */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,36 +10,32 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** ft_find_int - Recherche linéaire dans un tableau d'entiers
-** @tab: tableau d'entiers
-** @size: taille du tableau
-** @n: valeur à rechercher
-** Return: index de l'élément si trouvé, -1 sinon
-**
-** Algorithme: Recherche linéaire (séquentielle)
-** - Complexité: O(n) dans tous les cas
-** - Aucune précondition (tableau non trié accepté)
-**
-** Avantages:
-** - Simple à implémenter
-** - Fonctionne sur tableaux non triés
-** - Efficace pour petits tableaux
-**
-** Inconvénients:
-** - Lent pour grands tableaux (O(n))
-** - Pas optimal si tableau trié (utiliser binary search)
-*/
-int	ft_find_int(int *tab, int size, int n)
-{
-	int	i;
+#include "libft.h"
 
+/*
+** ft_strlcpy - Copie une chaîne avec garantie de null-termination
+** @dst: buffer destination
+** @src: chaîne source
+** @dstsize: taille totale du buffer destination
+** Return: longueur de src (permet de détecter la troncation)
+**
+** Note: Copie au plus dstsize-1 caractères et ajoute '\0'
+** Si dstsize == 0, ne copie rien mais retourne strlen(src)
+*/
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+{
+	size_t	src_len;
+	size_t	i;
+
+	src_len = ft_strlen(src);
+	if (dstsize == 0)
+		return (src_len);
 	i = 0;
-	while (i < size)
+	while (src[i] && i < dstsize - 1)
 	{
-		if (tab[i] == n)
-			return (i);
+		dst[i] = src[i];
 		i++;
 	}
-	return (-1);
+	dst[i] = '\0';
+	return (src_len);
 }

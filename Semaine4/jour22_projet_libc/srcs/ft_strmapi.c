@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_find_int.c                                      :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: piscine                                     +#+  +:+       +#+       */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,36 +10,32 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** ft_find_int - Recherche linéaire dans un tableau d'entiers
-** @tab: tableau d'entiers
-** @size: taille du tableau
-** @n: valeur à rechercher
-** Return: index de l'élément si trouvé, -1 sinon
-**
-** Algorithme: Recherche linéaire (séquentielle)
-** - Complexité: O(n) dans tous les cas
-** - Aucune précondition (tableau non trié accepté)
-**
-** Avantages:
-** - Simple à implémenter
-** - Fonctionne sur tableaux non triés
-** - Efficace pour petits tableaux
-**
-** Inconvénients:
-** - Lent pour grands tableaux (O(n))
-** - Pas optimal si tableau trié (utiliser binary search)
-*/
-int	ft_find_int(int *tab, int size, int n)
-{
-	int	i;
+#include "libft.h"
 
+/*
+** ft_strmapi - Applique une fonction à chaque caractère avec son index
+** @s: chaîne source
+** @f: fonction à appliquer (index, char) -> char
+** Return: nouvelle chaîne avec le résultat, NULL si échec
+**
+** Exemple: ft_strmapi("abc", rot) avec rot qui décale de l'index
+*/
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+{
+	char			*result;
+	unsigned int	i;
+
+	if (!s || !f)
+		return (NULL);
+	result = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
+	if (!result)
+		return (NULL);
 	i = 0;
-	while (i < size)
+	while (s[i])
 	{
-		if (tab[i] == n)
-			return (i);
+		result[i] = f(i, s[i]);
 		i++;
 	}
-	return (-1);
+	result[i] = '\0';
+	return (result);
 }

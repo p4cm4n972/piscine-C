@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_find_int.c                                      :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: piscine                                     +#+  +:+       +#+       */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,36 +10,31 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** ft_find_int - Recherche linéaire dans un tableau d'entiers
-** @tab: tableau d'entiers
-** @size: taille du tableau
-** @n: valeur à rechercher
-** Return: index de l'élément si trouvé, -1 sinon
-**
-** Algorithme: Recherche linéaire (séquentielle)
-** - Complexité: O(n) dans tous les cas
-** - Aucune précondition (tableau non trié accepté)
-**
-** Avantages:
-** - Simple à implémenter
-** - Fonctionne sur tableaux non triés
-** - Efficace pour petits tableaux
-**
-** Inconvénients:
-** - Lent pour grands tableaux (O(n))
-** - Pas optimal si tableau trié (utiliser binary search)
-*/
-int	ft_find_int(int *tab, int size, int n)
-{
-	int	i;
+#include "libft.h"
 
+/*
+** ft_strnstr - Localise une sous-chaîne dans une chaîne (limitée à len)
+** @haystack: chaîne où chercher
+** @needle: sous-chaîne à trouver
+** @len: nombre maximum de caractères à parcourir
+** Return: pointeur vers le début de needle dans haystack, NULL si non trouvé
+*/
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+{
+	size_t	i;
+	size_t	j;
+
+	if (!*needle)
+		return ((char *)haystack);
 	i = 0;
-	while (i < size)
+	while (haystack[i] && i < len)
 	{
-		if (tab[i] == n)
-			return (i);
+		j = 0;
+		while (haystack[i + j] == needle[j] && (i + j) < len && needle[j])
+			j++;
+		if (!needle[j])
+			return ((char *)&haystack[i]);
 		i++;
 	}
-	return (-1);
+	return (NULL);
 }

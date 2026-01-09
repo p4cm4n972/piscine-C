@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_find_int.c                                      :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: piscine                                     +#+  +:+       +#+       */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,36 +10,25 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** ft_find_int - Recherche linéaire dans un tableau d'entiers
-** @tab: tableau d'entiers
-** @size: taille du tableau
-** @n: valeur à rechercher
-** Return: index de l'élément si trouvé, -1 sinon
-**
-** Algorithme: Recherche linéaire (séquentielle)
-** - Complexité: O(n) dans tous les cas
-** - Aucune précondition (tableau non trié accepté)
-**
-** Avantages:
-** - Simple à implémenter
-** - Fonctionne sur tableaux non triés
-** - Efficace pour petits tableaux
-**
-** Inconvénients:
-** - Lent pour grands tableaux (O(n))
-** - Pas optimal si tableau trié (utiliser binary search)
-*/
-int	ft_find_int(int *tab, int size, int n)
-{
-	int	i;
+#include "libft.h"
 
-	i = 0;
-	while (i < size)
+/*
+** ft_strchr - Localise la première occurrence de c dans s
+** @s: chaîne à parcourir
+** @c: caractère à trouver (casté en char)
+** Return: pointeur vers la première occurrence, NULL si non trouvé
+**
+** Note: Si c == '\0', retourne un pointeur vers le '\0' final
+*/
+char	*ft_strchr(const char *s, int c)
+{
+	while (*s)
 	{
-		if (tab[i] == n)
-			return (i);
-		i++;
+		if (*s == (char)c)
+			return ((char *)s);
+		s++;
 	}
-	return (-1);
+	if ((char)c == '\0')
+		return ((char *)s);
+	return (NULL);
 }
