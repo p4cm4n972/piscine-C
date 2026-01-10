@@ -53,4 +53,17 @@ bin/
 build/
 obj/
 
+# Binaires spécifiques Piscine C
+**/search_test
+**/strings_test
+**/word_sort
+**/word_sort_advanced
+**/guess_game
+**/numbers_game
+**/benchmark
+**/mini_editor
+
+# Fichiers générés par les tests
+**/test.txt
+
 # Exceptions : garder les executables avec extension
